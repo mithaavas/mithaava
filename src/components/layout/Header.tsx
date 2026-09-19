@@ -22,6 +22,11 @@ type HeaderProps = {
 const nav = [
   { href: '/', label: 'Home', match: (p: string) => p === '/' },
   { href: '/menu/', label: 'Shop', match: (p: string) => p.startsWith('/menu') },
+  {
+    href: '/contact/',
+    label: 'Contact',
+    match: (p: string) => p.startsWith('/contact'),
+  },
 ] as const;
 
 export function Header({ variant = 'shop', className }: HeaderProps) {

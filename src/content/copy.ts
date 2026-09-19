@@ -101,6 +101,21 @@ export const copy = {
     backToMenu: 'Back to menu',
     orderId: (id: string) => `Order ${id}`,
   },
+  contact: {
+    title: 'Contact us',
+    subline:
+      'Tell us what you need — we will continue the conversation on WhatsApp.',
+    name: 'Your name',
+    address: 'Your address',
+    message: 'Your message',
+    messagePlaceholder: 'Custom cake, catering, timing, or any question…',
+    sendWhatsApp: 'Send on WhatsApp',
+    nameRequired: 'Enter your name',
+    addressMin: 'Enter an address of at least 10 characters',
+    messageMin: 'Write a short message (at least 10 characters)',
+    messageMax: 'Keep the message under 500 characters',
+    visitHint: 'Or visit us in Sector 46 — we are open 24 hours.',
+  },
   footer: {
     copyright: (year: number) => `© ${year} Mithaava`,
     fssai: 'FSSAI',

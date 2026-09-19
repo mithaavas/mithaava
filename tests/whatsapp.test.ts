@@ -1,5 +1,9 @@
 import { describe, expect, it } from 'vitest';
-import { buildWhatsAppMessage, buildWhatsAppUrl } from '@/lib/whatsapp';
+import {
+  buildContactWhatsAppMessage,
+  buildWhatsAppMessage,
+  buildWhatsAppUrl,
+} from '@/lib/whatsapp';
 import type { Order } from '@/domain/types';
 
 const baseOrder: Order = {
@@ -74,5 +78,17 @@ describe('whatsapp message builder', () => {
     const url = buildWhatsAppUrl('919211887308', message);
     expect(url.startsWith('https://wa.me/919211887308?text=')).toBe(true);
     expect(url).toContain(encodeURIComponent('*New order: Mithaava*'));
+  });
+
+  it('builds a contact inquiry message', () => {
+    const message = buildContactWhatsAppMessage({
+      name: 'Asha',
+      address: 'Flat 4, Sector 46, Gurugram',
+      message: 'Do you bake eggless red velvet for Sunday?',
+    });
+    expect(message).toContain('*Contact: Mithaava*');
+    expect(message).toContain('*Name:* Asha');
+    expect(message).toContain('*Address:* Flat 4, Sector 46, Gurugram');
+    expect(message).toContain('Do you bake eggless red velvet for Sunday?');
   });
 });

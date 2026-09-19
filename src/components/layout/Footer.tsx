@@ -53,6 +53,12 @@ export function Footer() {
               <Link href="/menu/" className="underline-offset-2 hover:underline">
                 Shop
               </Link>
+              <Link
+                href="/contact/"
+                className="underline-offset-2 hover:underline"
+              >
+                Contact
+              </Link>
               <Link href="/cart/" className="underline-offset-2 hover:underline">
                 Cart
               </Link>

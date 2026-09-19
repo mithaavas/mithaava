@@ -59,3 +59,24 @@ export function buildWhatsAppUrl(number: string, message: string): string {
   const digits = number.replace(/\D/g, '');
   return `https://wa.me/${digits}?text=${encodeURIComponent(message)}`;
 }
+
+export type ContactInquiry = {
+  name: string;
+  address: string;
+  message: string;
+};
+
+/**
+ * Prefill for the Contact Us → WhatsApp flow.
+ */
+export function buildContactWhatsAppMessage(inquiry: ContactInquiry): string {
+  return [
+    '*Contact: Mithaava*',
+    '',
+    `*Name:* ${inquiry.name.trim()}`,
+    `*Address:* ${inquiry.address.trim()}`,
+    '',
+    '*Message*',
+    inquiry.message.trim(),
+  ].join('\n');
+}
