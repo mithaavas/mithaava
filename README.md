@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mithaava
 
-## Getting Started
+Fresh cakes from Sector 46, Gurugram. Customers browse the menu, then confirm a delivery pincode at checkout and send the order on WhatsApp. Open 24 hours. No payments or accounts in V1.
 
-First, run the development server:
+## Run locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Other scripts:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm typecheck
+pnpm lint
+pnpm test
+pnpm build   # static export → out/
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Stack
 
-## Learn More
+Next.js (App Router, `output: 'export'`), TypeScript, Tailwind CSS, Framer Motion, Zustand, React Hook Form + Zod, Vitest.
 
-To learn more about Next.js, take a look at the following resources:
+## Architecture notes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- UI talks to data only through `services/productRepository`, `deliveryService`, and `orderChannel`.
+- Cart stores `{ productId, size, quantity }` only — prices are derived at read time.
+- Delivery pincode is confirmed on the **checkout** page (menu and cart stay open). Menu HTML is still statically generated and crawlable.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Soft-gate / SEO
 
-## Deploy on Vercel
+Menu and cart are open to everyone. Delivery pincode is confirmed on the **checkout** page before the WhatsApp order is sent.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Owner to-do
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Fill these before launch (search the repo for `TODO(owner)`):
+
+- [ ] Swiggy store URL (`src/config/aggregators.ts`)
+- [ ] Zomato store URL (`src/config/aggregators.ts`)
+- [ ] Verify serviceable pincodes within 10 km (`src/config/delivery.ts`)
+- [ ] Verify store lat/lng for House No. 1918
+- [ ] Confirm business hours and base lead time (`src/config/site.ts`)
+- [ ] Google Maps place link
+- [ ] Google Business Profile link
+- [ ] FSSAI licence number
+- [ ] Confirm Strawberry Cheese Cake 500 g price (650 vs 600)
+- [ ] Confirm “Tiramishu” spelling vs “Tiramisu”
+- [ ] Replace `https://mithaava.example` metadata base URL when the domain is ready
+- [ ] Real product photography (stock Unsplash placeholders are in `public/cakes/` for V1)
+
+WhatsApp number is set to **+91 92118 87308** (`919211887308`). Instagram: [mithaavastudio](https://www.instagram.com/mithaavastudio).
+
+## Sitemap
+
+Static export does not run a dynamic `app/sitemap.ts` server. A hand-maintained `public/sitemap.xml` lists core routes; regenerate product URLs when the menu changes (or automate in CI later).
