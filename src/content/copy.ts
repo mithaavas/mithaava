@@ -14,7 +14,7 @@ export const copy = {
     specialsLabel: 'Mithaava Specials',
     bestSeller: 'Best seller',
     orderNow: 'Order now',
-    whatsAppCta: 'WhatsApp us',
+    whatsAppCta: 'WhatsApp',
     whatsAppPrefill: 'Hi Mithaava! I would like to order a cake.',
     benefits: [
       { id: 'fresh', title: 'Freshly baked', body: 'Everyday' },
@@ -129,8 +129,6 @@ export const copy = {
     ],
     cofounderQuote:
       'I started Mithaava so Gurugram could get celebration cakes that taste handmade — and feel easy to order.',
-    visitCta: 'Visit or write to us',
-    shopCta: 'See the menu',
     nav: 'About',
   },
   contact: {

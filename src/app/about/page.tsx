@@ -1,14 +1,9 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import Link from 'next/link';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
-import { Button } from '@/components/ui/Button';
-import { WhatsAppIcon } from '@/components/brand/WhatsAppIcon';
 import { siteConfig } from '@/config/site';
-import { whatsappConfig } from '@/config/whatsapp';
 import { copy } from '@/content/copy';
-import { buildWhatsAppUrl } from '@/lib/whatsapp';
 
 export const metadata: Metadata = {
   title: copy.about.title,
@@ -23,9 +18,9 @@ export default function AboutPage() {
       <Header variant="shop" />
       <main className="bg-[#FFF6F2]">
         <section className="mx-auto max-w-6xl px-4 pt-6 pb-10 sm:px-6 sm:pt-8 sm:pb-12">
-          <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.7fr)] lg:gap-12">
+          <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(320px,400px)] lg:gap-10 xl:gap-14">
             {/* Story */}
-            <div>
+            <div className="min-w-0">
               <p className="text-[11px] font-semibold tracking-[0.18em] text-gold-500 uppercase">
                 {copy.about.eyebrow}
               </p>
@@ -44,55 +39,29 @@ export default function AboutPage() {
                   <p key={para.slice(0, 32)}>{para}</p>
                 ))}
               </div>
-
-              <div className="mt-7 flex flex-wrap items-center gap-3">
-                <Link href="/menu/">
-                  <Button size="lg" variant="accent">
-                    {copy.about.shopCta}
-                  </Button>
-                </Link>
-                <a
-                  href={buildWhatsAppUrl(
-                    whatsappConfig.number,
-                    copy.landing.whatsAppPrefill,
-                  )}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button size="lg" variant="whatsapp" className="gap-2">
-                    <WhatsAppIcon className="h-5 w-5" />
-                    {copy.landing.whatsAppCta}
-                  </Button>
-                </a>
-                <Link href="/contact/">
-                  <Button size="lg" variant="outline">
-                    {copy.about.visitCta}
-                  </Button>
-                </Link>
-              </div>
             </div>
 
-            {/* Compact co-founder card */}
-            <aside className="mx-auto w-full max-w-[280px] lg:mx-0 lg:justify-self-end">
-              <figure className="overflow-hidden rounded-[1.25rem] border border-icing-300/60 bg-cream-50 shadow-[var(--shadow-soft)]">
-                <div className="relative aspect-[4/5] w-full">
+            {/* Co-founder — larger portrait, same two-column rhythm */}
+            <aside className="mx-auto w-full max-w-[400px] lg:mx-0 lg:max-w-none">
+              <figure>
+                <div className="relative aspect-[3/4] overflow-hidden rounded-[1.35rem] border border-icing-300/60 bg-cream-50 shadow-[0_18px_40px_-24px_rgba(78,36,32,0.4)]">
                   <Image
                     src={cofounder.image}
                     alt={cofounder.imageAlt}
                     fill
                     priority
                     className="object-cover object-[center_12%]"
-                    sizes="280px"
+                    sizes="(max-width:1024px) 400px, 400px"
                   />
                 </div>
-                <figcaption className="border-t border-icing-300/50 px-4 py-4">
-                  <p className="font-display text-lg leading-tight text-teal-900">
+                <figcaption className="mt-4 px-0.5">
+                  <p className="font-display text-xl leading-tight text-teal-900 sm:text-2xl">
                     {cofounder.name}
                   </p>
                   <p className="mt-1 text-xs font-semibold tracking-wide text-berry-600 uppercase">
                     {cofounder.role}
                   </p>
-                  <p className="mt-3 text-sm leading-relaxed text-cocoa-800/75">
+                  <p className="mt-3 border-l-2 border-icing-300 pl-3 text-sm leading-relaxed text-cocoa-800/75 sm:text-[0.95rem]">
                     “{copy.about.cofounderQuote}”
                   </p>
                 </figcaption>
