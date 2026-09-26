@@ -15,14 +15,17 @@ import {
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { PlateCarousel } from '@/components/landing/PlateCarousel';
+import { WhatsAppIcon } from '@/components/brand/WhatsAppIcon';
 import { Button } from '@/components/ui/Button';
 import { collections } from '@/data/collections';
 import { siteConfig } from '@/config/site';
+import { whatsappConfig } from '@/config/whatsapp';
 import { copy } from '@/content/copy';
 import { useProducts } from '@/hooks/useProducts';
 import { useReducedMotionSafe } from '@/hooks/useReducedMotionSafe';
 import { lowestAvailablePrice } from '@/domain/pricing';
 import { formatINR } from '@/lib/format';
+import { buildWhatsAppUrl } from '@/lib/whatsapp';
 import { cn } from '@/lib/cn';
 import type { Product } from '@/domain/types';
 
@@ -145,7 +148,7 @@ export function LandingPage() {
                 </AnimatePresence>
 
                 <motion.div
-                  className="mt-8"
+                  className="mt-8 flex flex-wrap items-center gap-3"
                   initial={reduced ? false : { opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.15 }}
@@ -160,6 +163,19 @@ export function LandingPage() {
                       </span>
                     </Button>
                   </Link>
+                  <a
+                    href={buildWhatsAppUrl(
+                      whatsappConfig.number,
+                      copy.landing.whatsAppPrefill,
+                    )}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button size="lg" variant="whatsapp" className="gap-2">
+                      <WhatsAppIcon className="h-5 w-5" />
+                      {copy.landing.whatsAppCta}
+                    </Button>
+                  </a>
                 </motion.div>
               </div>
 

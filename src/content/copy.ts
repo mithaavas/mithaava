@@ -14,6 +14,8 @@ export const copy = {
     specialsLabel: 'Mithaava Specials',
     bestSeller: 'Best seller',
     orderNow: 'Order now',
+    whatsAppCta: 'WhatsApp us',
+    whatsAppPrefill: 'Hi Mithaava! I would like to order a cake.',
     benefits: [
       { id: 'fresh', title: 'Freshly baked', body: 'Everyday' },
       { id: 'delivery', title: 'Quick delivery', body: 'Within 10 km' },

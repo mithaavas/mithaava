@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Heart, ShoppingBag } from 'lucide-react';
 import { Logo } from '@/components/brand/Logo';
+import { WhatsAppIcon } from '@/components/brand/WhatsAppIcon';
 import { PincodeChip } from '@/components/delivery/PincodeChip';
 import { InstagramCta } from '@/components/brand/InstagramCta';
 import { useCartStore } from '@/store/cartStore';
@@ -11,7 +12,9 @@ import { useFavoritesStore } from '@/store/favoritesStore';
 import { useUiStore } from '@/store/uiStore';
 import { useDeliveryStore } from '@/store/deliveryStore';
 import { useIsClient } from '@/hooks/useIsClient';
+import { whatsappConfig } from '@/config/whatsapp';
 import { copy } from '@/content/copy';
+import { buildWhatsAppUrl } from '@/lib/whatsapp';
 import { cn } from '@/lib/cn';
 
 type HeaderProps = {
@@ -124,12 +127,26 @@ export function Header({ variant = 'shop', className }: HeaderProps) {
               </button>
             </>
           ) : (
-            <Link
-              href="/menu/"
-              className="inline-flex h-11 items-center rounded-full bg-berry-600 px-5 text-sm font-semibold text-white shadow-[0_8px_20px_-10px_rgba(194,37,92,0.75)]"
-            >
-              Order now
-            </Link>
+            <div className="flex items-center gap-2">
+              <a
+                href={buildWhatsAppUrl(
+                  whatsappConfig.number,
+                  copy.landing.whatsAppPrefill,
+                )}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex h-11 items-center gap-2 rounded-full bg-whatsapp px-4 text-sm font-semibold text-white shadow-[0_8px_20px_-10px_rgba(37,211,102,0.65)]"
+              >
+                <WhatsAppIcon className="h-4 w-4" />
+                {copy.landing.whatsAppCta}
+              </a>
+              <Link
+                href="/menu/"
+                className="inline-flex h-11 items-center rounded-full bg-berry-600 px-5 text-sm font-semibold text-white shadow-[0_8px_20px_-10px_rgba(194,37,92,0.75)]"
+              >
+                {copy.landing.orderNow}
+              </Link>
+            </div>
           )}
         </div>
       </div>
