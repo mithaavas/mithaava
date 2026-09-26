@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { FssaiBadge } from '@/components/brand/FssaiBadge';
 import { siteConfig } from '@/config/site';
 import { copy } from '@/content/copy';
 
@@ -86,7 +87,7 @@ export default function AboutPage() {
               ))}
             </ul>
 
-            <div className="mt-10 grid gap-2 rounded-[var(--radius-lg)] border border-icing-300/60 bg-cream-100/60 px-5 py-5 sm:grid-cols-[1fr_auto] sm:items-end sm:px-6">
+            <div className="mt-10 flex flex-col gap-5 rounded-[var(--radius-lg)] border border-icing-300/60 bg-cream-100/60 px-5 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-6">
               <div>
                 <p className="font-display text-lg text-teal-900">Find us</p>
                 <p className="mt-1 text-sm text-cocoa-800/80">
@@ -96,10 +97,13 @@ export default function AboutPage() {
                   {siteConfig.businessHours.label} ·{' '}
                   {siteConfig.businessHours.days}
                 </p>
+                <p className="mt-2 text-sm font-medium text-cocoa-800/75">
+                  WhatsApp {siteConfig.contact.whatsappDisplay}
+                </p>
               </div>
-              <p className="text-sm font-medium text-cocoa-800/75">
-                WhatsApp {siteConfig.contact.whatsappDisplay}
-              </p>
+              {siteConfig.fssaiApproved ? (
+                <FssaiBadge variant="cream" className="shrink-0" />
+              ) : null}
             </div>
           </div>
         </section>

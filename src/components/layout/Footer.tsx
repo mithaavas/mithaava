@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Logo } from '@/components/brand/Logo';
+import { FssaiBadge } from '@/components/brand/FssaiBadge';
 import { ChocolateWave } from '@/components/brand/WaveDividers';
 import { InstagramCta } from '@/components/brand/InstagramCta';
 import { WhatsAppIcon } from '@/components/brand/WhatsAppIcon';
@@ -16,7 +17,7 @@ export function Footer() {
       </div>
 
       <div className="bg-cocoa-800 text-cream-50">
-        <div className="mx-auto grid max-w-6xl gap-10 px-4 pt-4 pb-12 sm:px-6 md:grid-cols-3">
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 pt-4 pb-10 sm:px-6 md:grid-cols-3">
           <div>
             <Logo href="/" size="md" />
             <p className="mt-3 text-sm text-cream-50/80">
@@ -26,6 +27,11 @@ export function Footer() {
               {siteConfig.taglines.secondary}
             </p>
             <InstagramCta variant="footer" />
+            {siteConfig.fssaiApproved ? (
+              <div className="mt-5">
+                <FssaiBadge variant="footer" />
+              </div>
+            ) : null}
           </div>
 
           <div className="text-sm">
@@ -80,6 +86,8 @@ export function Footer() {
 
         <div className="border-t border-white/10 px-4 py-4 text-center text-xs text-cream-50/55">
           {copy.footer.copyright(year)}
+          <span className="mx-2">·</span>
+          {copy.footer.fssaiApproved}
           <span className="mx-2">·</span>
           Photos via Unsplash
         </div>

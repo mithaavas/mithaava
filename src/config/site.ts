@@ -28,8 +28,9 @@ export const siteConfig = {
     /** TODO(owner): replace with Google Business Profile link */
     googleBusinessProfile: '',
   },
-  /** TODO(owner): replace with FSSAI licence number */
-  fssai: '',
+  /** FSSAI registration / licence number */
+  fssai: '20826002001189',
+  fssaiApproved: true,
   /** Open 24 hours — delivery still respects cake lead times. */
   businessHours: {
     open: '00:00',

@@ -159,6 +159,9 @@ export const copy = {
   footer: {
     copyright: (year: number) => `© ${year} Mithaava`,
     fssai: 'FSSAI',
+    fssaiApproved: 'FSSAI approved',
+    fssaiSafe: 'Food safety compliant bakery',
+    fssaiLicence: (n: string) => `Lic. No. ${n}`,
   },
   notFound: {
     title: 'This page rolled off the tray',
