@@ -39,7 +39,7 @@ Fill these before launch (search the repo for `TODO(owner)`):
 - [ ] Swiggy store URL (`src/config/aggregators.ts`)
 - [ ] Zomato store URL (`src/config/aggregators.ts`)
 - [ ] Verify serviceable pincodes within 10 km (`src/config/delivery.ts`)
-- [ ] Verify store lat/lng for House No. 1918
+- [ ] Verify store lat/lng for House No. 540 LGF
 - [ ] Confirm business hours and base lead time (`src/config/site.ts`)
 - [ ] Google Maps place link
 - [ ] Google Business Profile link

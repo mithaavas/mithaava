@@ -116,6 +116,16 @@ export const copy = {
     messageMax: 'Keep the message under 500 characters',
     visitHint: 'Or visit us in Sector 46 — we are open 24 hours.',
   },
+  blog: {
+    eyebrow: 'From the bakery',
+    title: 'Mithaava journal',
+    subline:
+      'Guides on cake sizes, flavours, delivery in Gurugram, and ordering on WhatsApp.',
+    tasteThese: 'Taste these next',
+    browseMenu: 'Browse the menu',
+    moreStories: 'More from the journal',
+    nav: 'Journal',
+  },
   footer: {
     copyright: (year: number) => `© ${year} Mithaava`,
     fssai: 'FSSAI',

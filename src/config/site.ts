@@ -5,9 +5,9 @@ export const siteConfig = {
     secondary: 'Sweetness in Every Bite',
   },
   address: {
-    line1: 'House No. 1918',
+    line1: 'House No. 540 LGF',
     line2: 'Sector 46, Gurugram, Haryana',
-    full: 'House No. 1918, Sector 46, Gurugram, Haryana',
+    full: 'House No. 540 LGF, Sector 46, Gurugram, Haryana',
   },
   contact: {
     /** Display form for the UI */

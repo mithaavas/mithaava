@@ -39,8 +39,11 @@ export const metadata: Metadata = {
     type: 'website',
   },
   icons: {
-    icon: '/brand/mithaava-logo.png',
-    apple: '/brand/mithaava-logo.png',
+    icon: [
+      { url: '/brand/favicon.ico', sizes: '48x48' },
+      { url: '/brand/mithaava-favicon.png', type: 'image/png', sizes: '512x512' },
+    ],
+    apple: '/brand/mithaava-favicon.png',
   },
 };
 
