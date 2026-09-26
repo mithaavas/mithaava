@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://mithaava.example/</loc></url>
   <url><loc>https://mithaava.example/menu/</loc></url>
+  <url><loc>https://mithaava.example/about/</loc></url>
   <url><loc>https://mithaava.example/blog/</loc></url>
   <url><loc>https://mithaava.example/blog/perfect-cake-size-guide/</loc></url>
   <url><loc>https://mithaava.example/blog/red-velvet-vs-chocolate/</loc></url>

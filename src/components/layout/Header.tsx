@@ -23,6 +23,11 @@ const nav = [
   { href: '/', label: 'Home', match: (p: string) => p === '/' },
   { href: '/menu/', label: 'Shop', match: (p: string) => p.startsWith('/menu') },
   {
+    href: '/about/',
+    label: 'About',
+    match: (p: string) => p.startsWith('/about'),
+  },
+  {
     href: '/blog/',
     label: 'Blog',
     match: (p: string) => p.startsWith('/blog'),

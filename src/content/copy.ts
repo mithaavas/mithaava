@@ -101,6 +101,36 @@ export const copy = {
     backToMenu: 'Back to menu',
     orderId: (id: string) => `Order ${id}`,
   },
+  about: {
+    title: 'About us',
+    eyebrow: 'Our story',
+    lead:
+      'Mithaava began with a simple belief — every celebration deserves a cake that feels personal, fresh, and made with care.',
+    story: [
+      'From our bakery in Sector 46, Gurugram, we bake chocolate, cheese, signature and fruit cakes for birthdays, quiet dinners, and the moments in between. Har khushi mein meetha is not just a line — it is how we cook.',
+      'We stay open 24 hours so you can plan on your schedule. Browse the menu, confirm delivery nearby, and finish your order on WhatsApp with a real conversation — no complicated checkout apps.',
+    ],
+    valuesTitle: 'What we stand for',
+    values: [
+      {
+        title: 'Baked fresh',
+        body: 'Cakes made to order with lead times you can trust.',
+      },
+      {
+        title: 'Neighbourhood first',
+        body: 'Delivery within about 10 km of Sector 46, Gurugram.',
+      },
+      {
+        title: 'Always reachable',
+        body: 'Open 24 hours for messages — we reply on WhatsApp.',
+      },
+    ],
+    cofounderQuote:
+      'I started Mithaava so Gurugram could get celebration cakes that taste handmade — and feel easy to order.',
+    visitCta: 'Visit or write to us',
+    shopCta: 'See the menu',
+    nav: 'About',
+  },
   contact: {
     title: 'Contact us',
     subline:

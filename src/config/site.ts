@@ -13,6 +13,14 @@ export const siteConfig = {
     /** Display form for the UI */
     whatsappDisplay: '+91 92118 87308',
   },
+  team: {
+    cofounder: {
+      name: 'Prabhat Sharma',
+      role: 'Co-Founder',
+      image: '/brand/cofounder.jpg',
+      imageAlt: 'Prabhat Sharma, Co-Founder of Mithaava',
+    },
+  },
   socials: {
     instagram: 'https://www.instagram.com/mithaavastudio',
     /** TODO(owner): replace with Google Maps place link */
