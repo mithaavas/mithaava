@@ -118,13 +118,13 @@ export const copy = {
   },
   blog: {
     eyebrow: 'From the bakery',
-    title: 'Mithaava journal',
+    title: 'Mithaava blog',
     subline:
       'Guides on cake sizes, flavours, delivery in Gurugram, and ordering on WhatsApp.',
     tasteThese: 'Taste these next',
     browseMenu: 'Browse the menu',
-    moreStories: 'More from the journal',
-    nav: 'Journal',
+    moreStories: 'More from the blog',
+    nav: 'Blog',
   },
   footer: {
     copyright: (year: number) => `© ${year} Mithaava`,

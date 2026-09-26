@@ -16,7 +16,7 @@ export type BlogPost = {
 };
 
 /**
- * Mithaava bakery journal — static posts for SEO and customer education.
+ * Mithaava bakery blog — static posts for SEO and customer education.
  */
 export const blogPosts: BlogPost[] = [
   {
