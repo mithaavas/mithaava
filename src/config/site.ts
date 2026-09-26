@@ -15,10 +15,10 @@ export const siteConfig = {
   },
   team: {
     cofounder: {
-      name: 'Prabhat Sharma',
+      name: 'Rahul Kumar Jangra',
       role: 'Co-Founder',
       image: '/brand/cofounder.jpg',
-      imageAlt: 'Prabhat Sharma, Co-Founder of Mithaava',
+      imageAlt: 'Rahul Kumar Jangra, Co-Founder of Mithaava',
     },
   },
   socials: {
