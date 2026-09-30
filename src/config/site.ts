@@ -4,12 +4,12 @@ export const siteConfig = {
   url: 'https://mithaava.com',
   /** Primary image for search / social cards */
   heroImage: '/images/hero-cake.jpg',
+  logo: '/logo.png',
   seo: {
-    homeTitle:
-      'Mithaava | Artisanal Bakery & 24/7 Cake Delivery in Sector 46, Gurugram',
+    homeTitle: 'Mithaava | Artisanal Bakery & Cake Delivery Sector 46 Gurugram',
     homeDescription:
-      'Mithaava is a bakery in Sector 46, Gurugram baking fresh artisanal cakes, with 24/7 cake delivery in Gurgaon. Order chocolate truffle, Ferrero Rocher & cheesecakes.',
-    heroHeading: 'Bakery in Sector 46, Gurugram · Fresh artisanal cakes & 24/7 cake delivery in Gurgaon',
+      'Order fresh artisanal cakes, cheesecakes & gourmet desserts from Mithaava. 24/7 delivery across Sector 46 & South Gurugram within 10 km. Call/WhatsApp now.',
+    heroHeading: 'Fresh Artisanal Cakes & Gourmet Bakes in Gurugram',
     homeKeywords: [
       'bakery in Sector 46 Gurugram',
       '24/7 cake delivery Gurgaon',

@@ -14,6 +14,8 @@ export type CategoryPage = {
   /** Shown first, in this order */
   featuredProductSlugs: string[];
   navLabel: string;
+  /** Hero button label; defaults to "Shop {navLabel}" */
+  ctaLabel?: string;
   primaryKeyword: string;
   secondaryKeywords: string[];
   metaTitle: string;
@@ -130,6 +132,75 @@ export const categoryPages: CategoryPage[] = [
       },
     ],
     relatedBlogSlugs: ['cheese-cake-flavours-guide', 'perfect-cake-size-guide', 'midnight-cake-delivery-gurugram'],
+  },
+  {
+    slug: 'midnight-delivery-gurugram',
+    collectionIds: [],
+    extraProductSlugs: [
+      'ferrero-rocher',
+      'dark-chocolate-truffle',
+      'philippines-blueberry-cheese',
+      'black-forest',
+      'red-velvet',
+      'kit-kat',
+      'belgium-truffle',
+      'truffle-fresh-cream',
+      'butter-scotch',
+      'choco-oreo',
+      'pineapple',
+      'rainbow-cheese',
+    ],
+    featuredProductSlugs: [
+      'ferrero-rocher',
+      'dark-chocolate-truffle',
+      'philippines-blueberry-cheese',
+      'black-forest',
+      'red-velvet',
+      'kit-kat',
+    ],
+    navLabel: 'Midnight cake delivery',
+    ctaLabel: 'Choose a midnight cake',
+    primaryKeyword: 'midnight cake delivery Gurugram',
+    secondaryKeywords: [
+      'birthday cakes Sector 46',
+      'anniversary cakes Gurgaon',
+      '24/7 cake delivery Gurgaon',
+    ],
+    metaTitle: 'Midnight Cake Delivery in Gurugram — Delivered at 12 AM',
+    metaDescription:
+      'Midnight cake delivery in Gurugram from Mithaava, open 24/7 in Sector 46. Birthday & anniversary cakes delivered at 12 AM across South Gurugram within 10 km.',
+    heading: 'Midnight cake delivery in Gurugram',
+    intro:
+      'Surprise them the moment the clock strikes twelve. Mithaava is open 24 hours in Sector 46, so midnight cake delivery across Gurugram is part of our everyday — freshly finished birthday and anniversary cakes, delivered right on time.',
+    sections: [
+      {
+        heading: 'Birthday cakes in Sector 46, delivered at midnight',
+        body: 'Sector 46 is home, so midnight birthday cakes here arrive fastest. Our Ferrero Rocher, Dark Chocolate Truffle and classic Black Forest cakes are the most ordered for 12 AM birthday surprises, and the Kit Kat cake is a favourite for kids and teens.',
+      },
+      {
+        heading: 'Anniversary cakes in Gurgaon for two',
+        body: 'Pick our U & Me couple-size cake for an anniversary at midnight — a proper celebration cake made for exactly two people. Red Velvet with cream cheese frosting and the Philippines Blueberry Cheese Cake are the couple favourites across Gurgaon.',
+      },
+      {
+        heading: 'How to book a midnight cake',
+        body: 'Add your cake to the cart, choose the late-night delivery slot at checkout and send the order on WhatsApp. We confirm the address, society gate instructions and cake message with you. Order a few hours ahead — cheesecakes and signature cakes need extra setting time.',
+      },
+    ],
+    faqs: [
+      {
+        q: 'Do you deliver cakes at midnight in Gurugram?',
+        a: 'Yes. Mithaava is open 24 hours and delivers midnight cakes within 10 km of our Sector 46 bakery, including Sohna Road, Nirvana Country, Sectors 45, 47 and 50, and Golf Course Extension Road.',
+      },
+      {
+        q: 'How early should I order a midnight cake?',
+        a: 'For fresh cream and chocolate cakes, a few hours ahead is enough. Cheesecakes need about 2 extra hours and signature cakes like Red Velvet about 6 hours, so order those earlier in the day.',
+      },
+      {
+        q: 'Is there an extra charge for midnight delivery?',
+        a: 'Delivery charges depend on your location and are confirmed with you on WhatsApp before we finalise the order.',
+      },
+    ],
+    relatedBlogSlugs: ['midnight-cake-delivery-gurugram', 'birthday-cakes-sector-46', 'cake-message-ideas'],
   },
 ];
 

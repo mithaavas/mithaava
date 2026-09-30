@@ -47,13 +47,57 @@ const bySlug: Record<string, string> = {
 
 const DEFAULT_IMAGE = '/cakes/chocolate.jpg';
 
+/** Descriptive image alt text — flavour first, brand last. */
+const altBySlug: Record<string, string> = {
+  'black-forest': 'Black forest cake with cherries and chocolate shavings',
+  'belgium-pineapple': 'Belgium pineapple fresh cream cake',
+  pineapple: 'Pineapple fresh cream cake',
+  'choco-chips': 'Chocolate chip cake',
+  chocolate: 'Classic chocolate cream cake',
+  'fresh-fruit': 'Fresh fruit cream cake topped with seasonal fruits',
+  blueberry: 'Blueberry fresh cream cake',
+  'butter-scotch': 'Butterscotch cake with caramel crunch',
+  strawberry: 'Strawberry fresh cream cake',
+  'dark-chocolate-truffle': 'Dark chocolate truffle cake with glossy ganache',
+  'truffle-fresh-cream': 'Chocolate truffle fresh cream cake',
+  'choco-mud': 'Chocolate mud cake',
+  'choco-oreo': 'Chocolate Oreo cookie cake',
+  'kit-kat': 'Kit Kat chocolate cake',
+  'choco-fudge': 'Chocolate fudge cake',
+  'choco-marble': 'Chocolate marble cake',
+  'white-forest': 'White forest cake with white chocolate',
+  'choco-hazelnut': 'Chocolate hazelnut cake',
+  'choco-caramel': 'Chocolate caramel cake',
+  'belgium-truffle': 'Belgian chocolate truffle cake',
+  'ferrero-rocher': 'Ferrero Rocher hazelnut truffle cake',
+  opera: 'Opera cake with white truffle filling',
+  'philippines-blueberry-cheese': 'Blueberry cheesecake with berry topping',
+  'strawberry-cheese': 'Strawberry cheesecake',
+  'mango-cheese': 'Mango cheesecake',
+  'red-velvet': 'Red velvet cake with cream cheese frosting',
+  'rainbow-cheese': 'Rainbow cheesecake',
+  tiramishu: 'Coffee tiramisu cake',
+  'choco-walnut': 'Chocolate walnut cake',
+  'choco-strawberry': 'Chocolate strawberry cake',
+  'choco-dry-fruit': 'Chocolate dry fruit cake',
+  'choco-pineapple': 'Chocolate pineapple cake',
+  'choco-fruit': 'Chocolate fruit cake',
+  'cashew-casata': 'Cashew cassata cake',
+  kiwi: 'Kiwi fresh cream cake',
+  cherry: 'Cherry fresh cream cake',
+  lemon: 'Lemon cake',
+  'mango-pulp': 'Mango pulp fresh cream cake',
+  'red-velvet-fruit': 'Red velvet fruit cake',
+  'dry-fresho': 'Dry fruit and fresh fruit cake',
+};
+
 export function imageForProduct(
   slug: string,
   _collections: string[],
   name: string,
 ): { src: string; alt: string } {
   const src = bySlug[slug] ?? DEFAULT_IMAGE;
-  return { src, alt: name };
+  return { src, alt: `${altBySlug[slug] ?? name} — Mithaava bakery, Gurugram` };
 }
 
 /** Featured hero plate photos (real product shots). */

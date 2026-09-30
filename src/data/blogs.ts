@@ -26,18 +26,18 @@ export type BlogPost = {
 export const blogPosts: BlogPost[] = [
   {
     slug: 'midnight-cake-delivery-gurugram',
-    title: 'Midnight cake delivery in Gurugram: the complete guide',
-    metaTitle: 'Midnight Cake Delivery in Gurugram — Birthday & Anniversary',
+    title: 'How to plan a midnight cake surprise in Gurugram',
+    metaTitle: 'How to Plan a Midnight Cake Surprise in Gurugram',
     metaDescription:
-      'Planning a midnight surprise? How to get midnight cake delivery in Gurugram from Mithaava, Sector 46 — birthday cakes, anniversary cakes in Gurgaon, timings and tips.',
+      'A step-by-step guide to a perfect 12 AM cake surprise in Gurugram — timing, birthday cakes in Sector 46, anniversary cakes in Gurgaon and delivery tips.',
     keywords: [
-      'midnight cake delivery in Gurugram',
+      'midnight cake surprise Gurugram',
       'birthday cakes Sector 46',
       'anniversary cakes Gurgaon',
-      '24 hour cake delivery Gurgaon',
+      'midnight birthday surprise ideas',
     ],
     excerpt:
-      'Everything you need for a 12 a.m. surprise — how midnight cake delivery works in Gurugram, the best birthday and anniversary cakes, and how to time it perfectly.',
+      'Everything you need for a 12 a.m. surprise — how to time it, the best birthday and anniversary cakes, and the little details that make it perfect.',
     date: '2026-09-30',
     readMinutes: 6,
     cover: {
@@ -106,6 +106,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'links',
         items: [
+          { label: 'Midnight cake delivery in Gurugram', href: '/cakes/midnight-delivery-gurugram/' },
           { label: 'Best chocolate truffle cakes in Gurgaon', href: '/cakes/chocolate-cakes/' },
           { label: 'Blueberry cheesecake & more cheesecakes', href: '/cakes/cheesecakes/' },
           { label: 'Full cake menu', href: '/menu/' },

@@ -291,7 +291,7 @@ export function LandingPage() {
                 blueberry cheesecake
               </Link>{' '}
               or plan a{' '}
-              <Link href="/blog/midnight-cake-delivery-gurugram/" className="font-medium text-teal-700 underline-offset-2 hover:underline">
+              <Link href="/cakes/midnight-delivery-gurugram/" className="font-medium text-teal-700 underline-offset-2 hover:underline">
                 midnight cake delivery
               </Link>
               .

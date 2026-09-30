@@ -7,7 +7,6 @@ import { Footer } from '@/components/layout/Footer';
 import { MobileCartBar } from '@/components/layout/MobileCartBar';
 import { ProductDetailGate } from '@/components/product/ProductDetailGate';
 import { JsonLd } from '@/components/seo/JsonLd';
-import { siteConfig } from '@/config/site';
 import { getCategoryPageForCollection } from '@/data/categoryPages';
 import {
   breadcrumbJsonLd,
@@ -32,11 +31,11 @@ export async function generateMetadata({
   const description = productSeoDescription(product);
   const path = `/menu/${product.slug}/`;
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: { canonical: path },
     openGraph: {
-      title: `${title} | ${siteConfig.brand}`,
+      title,
       description,
       url: path,
       ...(product.image ? { images: [{ url: product.image.src, alt: product.image.alt }] } : {}),

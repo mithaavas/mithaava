@@ -183,7 +183,7 @@ export default async function LocalityPage({
                           {p.image ? (
                             <Image
                               src={p.image.src}
-                              alt={`${p.name} cake — delivery in ${locality.shortName}`}
+                              alt={p.image.alt}
                               fill
                               className="object-cover transition-transform duration-500 group-hover:scale-105"
                               sizes="(max-width:640px) 50vw, 25vw"

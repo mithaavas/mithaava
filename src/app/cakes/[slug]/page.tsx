@@ -112,7 +112,7 @@ export default async function CategoryLandingPage({
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <a href="#cakes">
                 <Button size="lg" variant="accent" className="gap-2">
-                  Shop {page.navLabel.toLowerCase()}
+                  {page.ctaLabel ?? `Shop ${page.navLabel.toLowerCase()}`}
                   <ArrowRight className="h-4 w-4" aria-hidden />
                 </Button>
               </a>

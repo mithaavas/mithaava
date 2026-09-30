@@ -3,7 +3,7 @@ import { Fraunces, Figtree, Great_Vibes } from 'next/font/google';
 import { Providers } from '@/components/layout/Providers';
 import { siteConfig } from '@/config/site';
 import { deliveryConfig } from '@/config/delivery';
-import { bakeryJsonLd } from '@/lib/seo';
+import { siteGraphJsonLd } from '@/lib/seo';
 import '@/styles/globals.css';
 
 const fraunces = Fraunces({
@@ -65,7 +65,7 @@ export const viewport: Viewport = {
   themeColor: '#0E6B75',
 };
 
-const jsonLd = bakeryJsonLd();
+const jsonLd = siteGraphJsonLd();
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (

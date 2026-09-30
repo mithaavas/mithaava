@@ -2,6 +2,7 @@ import { siteConfig } from '@/config/site';
 import { deliveryConfig } from '@/config/delivery';
 import { getAllLocalities, type Locality } from '@/data/localities';
 import { getMapLinkUrl } from '@/lib/maps';
+import { whatsappConfig } from '@/config/whatsapp';
 import { lowestAvailablePrice } from '@/domain/pricing';
 import type { Product, SizeKey } from '@/domain/types';
 import type { BlogPost } from '@/data/blogs';
@@ -14,19 +15,39 @@ export function localityPath(slug: string): string {
   return `/cake-delivery/${slug}/`;
 }
 
-/** Stable entity id shared by every schema that references the bakery. */
-export const bakeryId = siteConfig.url;
+/** Stable entity ids shared by every schema that references the bakery / site. */
+export const bakeryId = `${siteConfig.url}/#bakery`;
+export const websiteId = `${siteConfig.url}/#website`;
 
-export function bakeryJsonLd() {
+export function siteGraphJsonLd() {
   return {
     '@context': 'https://schema.org',
-    '@type': 'Bakery',
-    name: siteConfig.brand,
-    image: absoluteUrl(siteConfig.heroImage),
-    '@id': bakeryId,
+    '@graph': [bakeryEntity(), websiteEntity()],
+  };
+}
+
+function websiteEntity() {
+  return {
+    '@type': 'WebSite',
+    '@id': websiteId,
     url: siteConfig.url,
+    name: siteConfig.brand,
+    inLanguage: 'en-IN',
+    publisher: { '@id': bakeryId },
+  };
+}
+
+function bakeryEntity() {
+  return {
+    '@type': 'Bakery',
+    '@id': bakeryId,
+    name: siteConfig.brand,
+    url: siteConfig.url,
+    logo: absoluteUrl(siteConfig.logo),
+    image: absoluteUrl(siteConfig.heroImage),
     telephone: siteConfig.contact.telephone,
     priceRange: '₹₹',
+    servesCuisine: ['Bakery', 'Cakes', 'Desserts'],
     address: {
       '@type': 'PostalAddress',
       streetAddress: `${siteConfig.address.line1}, ${siteConfig.address.locality}`,
@@ -40,29 +61,29 @@ export function bakeryJsonLd() {
       latitude: deliveryConfig.storeLocation.lat,
       longitude: deliveryConfig.storeLocation.lng,
     },
-    openingHoursSpecification: {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: [
-        'Monday',
-        'Tuesday',
-        'Wednesday',
-        'Thursday',
-        'Friday',
-        'Saturday',
-        'Sunday',
-      ],
-      opens: '00:00',
-      closes: '23:59',
-    },
-    servesCuisine: 'Bakery, Cakes, Desserts',
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: [
+          'Monday',
+          'Tuesday',
+          'Wednesday',
+          'Thursday',
+          'Friday',
+          'Saturday',
+          'Sunday',
+        ],
+        opens: '00:00',
+        closes: '23:59',
+      },
+    ],
     sameAs: [
       siteConfig.socials.instagram,
-      siteConfig.socials.facebook,
+      `https://wa.me/${whatsappConfig.number}`,
       siteConfig.socials.googleBusinessProfile,
     ].filter(Boolean),
     description: siteConfig.seo.homeDescription,
     slogan: siteConfig.taglines.primary,
-    logo: absoluteUrl('/icons/mithaava-icon-512.png'),
     hasMap: getMapLinkUrl(),
     areaServed: [
       { '@type': 'Place', name: `${siteConfig.address.locality}, ${siteConfig.address.city}` },
@@ -107,17 +128,11 @@ export function faqJsonLd(faqs: { q: string; a: string }[]) {
   };
 }
 
-const productTitleOverrides: Record<string, string> = {
-  'dark-chocolate-truffle': 'Dark Chocolate Truffle Cake Online — Delivery in Gurgaon',
-  'ferrero-rocher': 'Ferrero Rocher Cake Delivery in Gurugram',
-};
-
-/** Search-friendly title for a product: "Kit Kat Cake Delivery in Gurugram". */
+/** Full product title: "Ferrero Rocher Cake (₹700) | Order Online in Gurugram - Mithaava". */
 export function productSeoTitle(product: Product): string {
-  return (
-    productTitleOverrides[product.slug] ??
-    `${product.name} Delivery in ${siteConfig.address.city}`
-  );
+  const from = lowestAvailablePrice(product);
+  const price = from != null ? ` (₹${from})` : '';
+  return `${product.name}${price} | Order Online in ${siteConfig.address.city} - ${siteConfig.brand}`;
 }
 
 export function productSeoDescription(product: Product): string {
