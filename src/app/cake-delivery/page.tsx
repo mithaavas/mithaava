@@ -11,7 +11,7 @@ import { localityPath } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Cake Delivery Areas in Gurugram — Sohna Road, Sector 45, 47, 50 & more',
-  description: `Mithaava delivers fresh cakes within ${deliveryConfig.radiusKm} km of Sector 46, Gurugram — Sohna Road, Nirvana Country, Sector 45, Sector 47, Sector 50 and Golf Course Extension Road. Open 24 hours.`,
+  description: `Mithaava delivers fresh cakes 24/7 within ${deliveryConfig.radiusKm} km of Sector 46 — Sohna Road, Nirvana Country, Sectors 45, 47, 50 & Golf Course Extension.`,
   alternates: { canonical: '/cake-delivery/' },
 };
 

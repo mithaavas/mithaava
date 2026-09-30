@@ -46,7 +46,7 @@ export const categoryPages: CategoryPage[] = [
     ],
     metaTitle: 'Best Chocolate Truffle Cake in Gurgaon — Ferrero Rocher Cakes',
     metaDescription:
-      'Order the best chocolate truffle cake in Gurgaon from Mithaava, Sector 46. Ferrero Rocher cake delivery, dark chocolate cakes online and Belgian truffle — delivered fresh 24/7.',
+      'Order the best chocolate truffle cake in Gurgaon from Mithaava, Sector 46 — Ferrero Rocher, Belgian truffle & dark chocolate cakes, delivered 24/7.',
     heading: 'Best chocolate truffle cake in Gurgaon',
     intro:
       'Rich, glossy and properly chocolatey — our truffle cakes are baked fresh in Sector 46, Gurugram and delivered across Gurgaon any time of the day or night. From a classic dark chocolate truffle to a hazelnut-loaded Ferrero Rocher cake, this is our full chocolate collection.',
@@ -99,7 +99,7 @@ export const categoryPages: CategoryPage[] = [
     ],
     metaTitle: 'Blueberry Cheesecake in Gurugram — Mango Cheese Cake & More',
     metaDescription:
-      'Order blueberry cheesecake in Gurugram from Mithaava, Sector 46. Creamy mango cheese cake, strawberry and rainbow cheesecakes — fresh, chilled and delivered 24/7 near you.',
+      'Blueberry cheesecake in Gurugram from Mithaava, Sector 46 — plus mango, strawberry & rainbow cheesecakes. Fresh, chilled and delivered 24/7.',
     heading: 'Blueberry cheesecake in Gurugram',
     intro:
       'Silky, rich and chilled to perfection — Mithaava cheesecakes are made fresh in our Sector 46 kitchen and delivered across Gurugram. Our signature Philippines Blueberry Cheese Cake leads the collection, alongside mango, strawberry and rainbow cheesecakes.',
@@ -168,7 +168,7 @@ export const categoryPages: CategoryPage[] = [
     ],
     metaTitle: 'Midnight Cake Delivery in Gurugram — Delivered at 12 AM',
     metaDescription:
-      'Midnight cake delivery in Gurugram from Mithaava, open 24/7 in Sector 46. Birthday & anniversary cakes delivered at 12 AM across South Gurugram within 10 km.',
+      'Midnight cake delivery in Gurugram from Mithaava, open 24/7 in Sector 46. Birthday & anniversary cakes delivered at 12 AM within 10 km.',
     heading: 'Midnight cake delivery in Gurugram',
     intro:
       'Surprise them the moment the clock strikes twelve. Mithaava is open 24 hours in Sector 46, so midnight cake delivery across Gurugram is part of our everyday — freshly finished birthday and anniversary cakes, delivered right on time.',

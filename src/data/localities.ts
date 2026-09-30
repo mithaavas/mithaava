@@ -43,7 +43,7 @@ export const localities: Locality[] = [
     shortName: 'Sohna Road',
     metaTitle: 'Cake Delivery on Sohna Road, Gurugram — Open 24/7',
     metaDescription:
-      'Fresh cakes delivered along Sohna Road, Gurugram from Mithaava bakery in Sector 46. Open 24 hours — midnight birthday cakes, cheese cakes and celebration cakes on WhatsApp.',
+      'Cake delivery on Sohna Road, Gurugram from Mithaava, Sector 46. Open 24/7 for midnight birthday cakes, cheesecakes & celebration cakes. Order on WhatsApp.',
     heading: 'Fresh cake delivery on Sohna Road, Gurugram',
     intro:
       'Sohna Road is one of our busiest delivery routes. From offices to high-rise societies, we bring freshly finished Mithaava cakes straight from our Sector 46 kitchen — any hour of the day.',
@@ -62,7 +62,7 @@ export const localities: Locality[] = [
     shortName: 'Nirvana Country',
     metaTitle: 'Cake Delivery in Nirvana Country, Gurugram — 24 Hours',
     metaDescription:
-      'Order fresh cakes for home delivery in Nirvana Country, Sector 50, Gurugram. Mithaava bakery is open 24/7 — birthday, anniversary and cheese cakes delivered with care.',
+      'Cake delivery in Nirvana Country, Gurugram from Mithaava bakery, Sector 46. Birthday, anniversary & cheesecakes delivered fresh to your door, 24/7.',
     heading: 'Cake delivery in Nirvana Country, Gurugram',
     intro:
       'Birthdays at home, anniversaries in the garden, a quiet dessert after dinner — Mithaava delivers freshly baked cakes to every block of Nirvana Country.',
@@ -81,7 +81,7 @@ export const localities: Locality[] = [
     shortName: 'Sector 45',
     metaTitle: 'Cake Delivery in Sector 45, Gurugram — Next Door Bakery',
     metaDescription:
-      'Mithaava is your neighbourhood bakery for Sector 45, Gurugram. Fresh cakes baked next door in Sector 46 and delivered 24 hours a day — order on WhatsApp.',
+      'Your neighbourhood bakery for Sector 45, Gurugram. Mithaava bakes fresh cakes next door in Sector 46 and delivers 24 hours a day. Order on WhatsApp.',
     heading: 'Your neighbourhood bakery for Sector 45, Gurugram',
     intro:
       'Sector 45 is practically next door to our kitchen in Sector 46. That makes Mithaava one of the quickest ways to get a fresh, made-with-care cake to your doorstep.',
@@ -100,7 +100,7 @@ export const localities: Locality[] = [
     shortName: 'Sector 47',
     metaTitle: 'Cake Delivery in Sector 47, Gurugram — Open 24 Hours',
     metaDescription:
-      'Fresh birthday and celebration cakes delivered in Sector 47, Gurugram by Mithaava bakery, Sector 46. Open 24/7 with midnight cake delivery on WhatsApp.',
+      'Cake delivery in Sector 47, Gurugram from Mithaava, Sector 46. Birthday & celebration cakes, open 24/7 with midnight delivery. Order on WhatsApp.',
     heading: 'Birthday & celebration cakes delivered in Sector 47',
     intro:
       'From Malibu Towne to the lanes around Subhash Chowk, Sector 47 is a few minutes from our bakery — perfect for fresh cakes delivered right when you need them.',
@@ -119,7 +119,7 @@ export const localities: Locality[] = [
     shortName: 'Sector 50',
     metaTitle: 'Cake Delivery in Sector 50, Gurugram — Fresh & 24/7',
     metaDescription:
-      'Order fresh cakes in Sector 50, Gurugram from Mithaava. Cream cakes, cheese cakes and premium celebration cakes delivered 24 hours a day from Sector 46.',
+      'Cake delivery in Sector 50, Gurugram from Mithaava. Fresh cream cakes, cheesecakes & premium celebration cakes from Sector 46, delivered 24/7.',
     heading: 'Fresh cakes delivered in Sector 50, Gurugram',
     intro:
       'Sector 50 is well inside our delivery radius, so whether it is a birthday at home or a celebration at the office, a fresh Mithaava cake is only a WhatsApp message away.',
@@ -138,7 +138,7 @@ export const localities: Locality[] = [
     shortName: 'Golf Course Extension',
     metaTitle: 'Cake Delivery on Golf Course Extension Road, Gurugram',
     metaDescription:
-      'Premium cakes delivered on Golf Course Extension Road, Gurugram by Mithaava bakery. Open 24/7 — Ferrero Rocher, Red Velvet, cheese cakes and custom messages.',
+      'Cake delivery on Golf Course Extension Road, Gurugram by Mithaava. Ferrero Rocher, Red Velvet & cheesecakes with custom messages — open 24/7.',
     heading: 'Premium cake delivery on Golf Course Extension Road',
     intro:
       'Golf Course Extension Road is home to some of Gurugram’s most vibrant societies — and some of our most loved celebration cakes. Mithaava delivers here 24 hours a day.',

@@ -9,7 +9,8 @@ import { copy } from '@/content/copy';
 
 export const metadata: Metadata = {
   title: 'About Us — Artisanal Bakery in Sector 46, Gurugram',
-  description: `${copy.about.lead} Find us at ${siteConfig.address.full} — open 24 hours.`,
+  description:
+    'Meet Mithaava, the artisanal bakery in Sector 46, Gurugram. Our story, our co-founder Rahul Kumar Jangra and the values behind every fresh cake we bake.',
   alternates: { canonical: '/about/' },
 };
 

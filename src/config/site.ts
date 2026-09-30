@@ -86,7 +86,7 @@ export const siteConfig = {
   /** Optional longer blurbs for hero specials (falls back to product.note). */
   heroSpecialBlurbs: {
     'ferrero-rocher':
-      'Hazelnut + cashew + truffle + wafers filling. A luxurious bite for your special moments.',
+      'Layers of hazelnut, cashew, chocolate truffle and crunchy wafers — a luxurious bite for your special moments.',
     'red-velvet':
       'Soft crimson layers with cream cheese frosting — our signature celebration cake.',
     'philippines-blueberry-cheese':

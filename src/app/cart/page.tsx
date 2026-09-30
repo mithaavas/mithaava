@@ -6,6 +6,8 @@ import { copy } from '@/content/copy';
 
 export const metadata: Metadata = {
   title: copy.cart.title,
+  description:
+    'Review your Mithaava cake order — sizes, quantities and cake messages — then check delivery to your Gurugram pincode and send the order on WhatsApp.',
   alternates: { canonical: '/cart/' },
 };
 

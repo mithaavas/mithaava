@@ -116,6 +116,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'perfect-cake-size-guide',
+    metaDescription:
+      'How big a cake do you need? U & Me for two, 500 gm for 4–6 and 1 kg for 8–12 guests — Mithaava\'s simple cake size guide for Gurugram parties.',
     title: 'How to pick the perfect cake size for your gathering',
     excerpt:
       'U & Me for two, 500 gm for a small celebration, 1 kg when the table is full — a simple size guide for Gurugram parties.',
@@ -164,6 +166,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'red-velvet-vs-chocolate',
+    metaDescription:
+      'Red velvet or chocolate cake for your celebration? Compare taste, texture and occasions, then order either fresh from Mithaava, Sector 46 Gurugram.',
     title: 'Red velvet or chocolate? Choosing your celebration cake',
     excerpt:
       'Soft crimson layers versus deep cocoa — how to decide which classic belongs on your table.',
@@ -206,6 +210,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'same-day-cake-gurugram',
+    metaDescription:
+      'Need a same-day cake in Gurugram? How lead times, delivery slots and our 10 km radius from Sector 46 work — and which cakes are ready fastest.',
     title: 'Same-day cakes in Gurugram: what you should know',
     excerpt:
       'We deliver within 10 km of Sector 46. Lead times still matter — especially for cheese and signature cakes.',
@@ -244,6 +250,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'birthday-cakes-sector-46',
+    metaDescription:
+      'Birthday cake ideas loved in Sector 46, Gurugram — from Black Forest and Ferrero Rocher to Kit Kat cakes for kids. Baked fresh, delivered 24/7.',
     title: 'Birthday cake ideas beloved in Sector 46',
     excerpt:
       'From Black Forest classics to Kit Kat fun — flavours that keep showing up at neighbourhood parties.',
@@ -283,6 +291,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'cheese-cake-flavours-guide',
+    metaDescription:
+      'Blueberry, mango, strawberry or rainbow? A guide to Mithaava\'s cheesecakes in Gurugram — flavours, occasions and how far ahead to order.',
     title: 'A gentle guide to our cheese cakes',
     excerpt:
       'Blueberry, mango, strawberry, rainbow — when to pick each silky slice.',
@@ -325,6 +335,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'ferrero-rocher-celebration-cake',
+    metaDescription:
+      'Why the Ferrero Rocher cake is Mithaava\'s most-loved special — hazelnut, cashew, truffle and wafer layers, delivered across Gurugram 24/7.',
     title: 'Ferrero Rocher cake: when the moment deserves luxury',
     excerpt:
       'Hazelnut, cashew, truffle and wafers — the Mithaava special that turns an ordinary evening into a memory.',
@@ -362,6 +374,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'cake-message-ideas',
+    metaDescription:
+      'Short, warm cake message ideas for birthdays, anniversaries and thank-yous that fit our 40-character limit — pick one and order from Mithaava.',
     title: 'Cake message ideas that actually fit',
     excerpt:
       'Short, warm lines for birthdays, anniversaries and thank-yous — within our 40-character cake message limit.',
@@ -409,6 +423,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'fresh-cream-cakes-explained',
+    metaDescription:
+      'What makes fresh cream cakes light and soft, how to store them overnight, and the best Mithaava fresh cream flavours to order in Gurugram.',
     title: 'Fresh cream cakes: soft, cool, celebration-ready',
     excerpt:
       'Why fresh cream cakes feel lighter, how to store them, and which Mithaava flavours lean this way.',
@@ -446,6 +462,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'open-24-hours-fresh-cakes',
+    metaDescription:
+      'Mithaava is open 24 hours in Sector 46, Gurugram. How to plan late-night and early-morning cake orders around each cake\'s baking lead time.',
     title: 'Open 24 hours: sweet plans on your schedule',
     excerpt:
       'Message us anytime. Baking and delivery still respect each cake’s lead time — here is how to plan overnight orders.',
@@ -484,6 +502,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'order-cakes-whatsapp-guide',
+    metaDescription:
+      'How to order cakes on WhatsApp from Mithaava: pick a cake, check your pincode, add delivery details and send — no app needed. A step-by-step guide.',
     title: 'How to order cakes on WhatsApp with Mithaava',
     excerpt:
       'A clear walkthrough: menu → cart → pincode → details → send. No app download, no checkout confusion.',

@@ -8,7 +8,7 @@ import { copy } from '@/content/copy';
 
 export const metadata: Metadata = {
   title: 'Contact Us — Bakery in Sector 46, Gurugram (Open 24/7)',
-  description: `Visit or message Mithaava at ${siteConfig.address.full}. Open 24 hours — order cakes on WhatsApp ${siteConfig.contact.whatsappDisplay} or get directions on Google Maps.`,
+  description: `Contact Mithaava bakery, House No. 540 LGF, Sector 46, Gurugram. Open 24 hours — WhatsApp ${siteConfig.contact.whatsappDisplay} or get directions on Google Maps.`,
   alternates: { canonical: '/contact/' },
 };
 

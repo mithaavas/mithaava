@@ -5,7 +5,7 @@ import { Footer } from '@/components/layout/Footer';
 export const metadata: Metadata = {
   title: 'Cake Menu — Order Cakes Online in Gurugram',
   description:
-    'Order cakes online from Mithaava, the bakery in Sector 46, Gurugram. Chocolate truffle, Ferrero Rocher, blueberry cheesecake, red velvet and fruit cakes — delivered 24/7 in Gurgaon.',
+    'Browse the full Mithaava cake menu, Sector 46 Gurugram — chocolate truffle, Ferrero Rocher, cheesecakes, red velvet & fruit cakes. Order online, 24/7.',
   alternates: { canonical: '/menu/' },
 };
 

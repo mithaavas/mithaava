@@ -175,7 +175,7 @@ export const productsSeed: Product[] = [
     name: 'Ferrero Rocher Cake',
     collections: ['chocolate'],
     prices: { oneKg: 1250, halfKg: 800, uAndMe: 700 },
-    note: 'Hazelnut + cashew + truffle + wafers filling',
+    note: 'Hazelnut, cashew, truffle and crunchy wafer filling',
     isActive: true,
   },
   {
@@ -338,7 +338,7 @@ export const productsSeed: Product[] = [
     name: 'Dry-Fresho Cake',
     collections: ['fruit'],
     prices: { oneKg: 850, halfKg: 550, uAndMe: 450 },
-    note: 'Dry fruits + fresh fruits',
+    note: 'Dry fruits and fresh fruits',
     isActive: true,
   },
 ];

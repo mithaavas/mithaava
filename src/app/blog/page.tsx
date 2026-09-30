@@ -8,7 +8,7 @@ import { copy } from '@/content/copy';
 export const metadata: Metadata = {
   title: 'Cake Guides — Midnight Cake Delivery & Birthday Cakes, Gurugram',
   description:
-    'Guides from Mithaava bakery, Sector 46: midnight cake delivery in Gurugram, birthday cakes in Sector 46, anniversary cakes in Gurgaon, cake sizes and flavours.',
+    'Cake guides from Mithaava, Sector 46 Gurugram: midnight surprises, birthday and anniversary cakes, cake sizes, cheesecake flavours and ordering tips.',
   alternates: { canonical: '/blog/' },
 };
 

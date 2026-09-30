@@ -6,6 +6,7 @@ import { whatsappConfig } from '@/config/whatsapp';
 import { lowestAvailablePrice } from '@/domain/pricing';
 import type { Product, SizeKey } from '@/domain/types';
 import type { BlogPost } from '@/data/blogs';
+import { productBlurbs } from '@/data/productSeo';
 
 export function absoluteUrl(path = '/'): string {
   return `${siteConfig.url}${path.startsWith('/') ? path : `/${path}`}`;
@@ -135,11 +136,28 @@ export function productSeoTitle(product: Product): string {
   return `${product.name}${price} | Order Online in ${siteConfig.address.city} - ${siteConfig.brand}`;
 }
 
+export const META_DESCRIPTION_MAX = 155;
+
+/** First candidate that fits the snippet limit (falls back to the shortest). */
+function fitDescription(candidates: string[]): string {
+  return (
+    candidates.find((c) => c.length <= META_DESCRIPTION_MAX) ??
+    candidates.reduce((a, b) => (a.length <= b.length ? a : b))
+  );
+}
+
 export function productSeoDescription(product: Product): string {
   const from = lowestAvailablePrice(product);
   const price = from != null ? ` from ₹${from}` : '';
-  const note = product.note ? ` ${product.note}.` : '';
-  return `Order ${product.name}${price} at ${siteConfig.brand}, the bakery in ${siteConfig.address.locality}, ${siteConfig.address.city}.${note} Fresh, made to order and delivered 24/7 across Gurgaon.`;
+  const blurb = productBlurbs[product.slug];
+  const lead = blurb
+    ? `${product.name}${price} — ${blurb}.`
+    : `${product.name}${price}.`;
+  return fitDescription([
+    `${lead} Baked fresh at Mithaava, Sector 46 Gurugram & delivered 24/7. Order online or on WhatsApp.`,
+    `${lead} Baked fresh at Mithaava, Sector 46 Gurugram & delivered 24/7.`,
+    `${lead} Fresh from Mithaava, Sector 46 Gurugram. 24/7 delivery.`,
+  ]);
 }
 
 export function productJsonLd(product: Product) {
