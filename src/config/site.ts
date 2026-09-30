@@ -1,5 +1,25 @@
 export const siteConfig = {
   brand: 'Mithaava',
+  /** Canonical origin — no trailing slash. Update when a custom domain goes live. */
+  url: 'https://www.mithaava.com',
+  /** Primary image for search / social cards */
+  heroImage: '/images/hero-cake.jpg',
+  seo: {
+    homeTitle:
+      'Mithaava | Artisanal Bakery & 24/7 Cake Delivery in Sector 46, Gurugram',
+    homeDescription:
+      'Mithaava is a bakery in Sector 46, Gurugram baking fresh artisanal cakes, with 24/7 cake delivery in Gurgaon. Order chocolate truffle, Ferrero Rocher & cheesecakes.',
+    heroHeading: 'Bakery in Sector 46, Gurugram · Fresh artisanal cakes & 24/7 cake delivery in Gurgaon',
+    homeKeywords: [
+      'bakery in Sector 46 Gurugram',
+      '24/7 cake delivery Gurgaon',
+      'fresh artisanal cakes',
+      'midnight cake delivery Gurugram',
+      'best chocolate truffle cake Gurgaon',
+      'blueberry cheesecake Gurugram',
+      'Ferrero Rocher cake delivery',
+    ],
+  },
   taglines: {
     primary: 'Har Khushi Mein Meetha',
     secondary: 'Sweetness in Every Bite',
@@ -8,10 +28,16 @@ export const siteConfig = {
     line1: 'House No. 540 LGF',
     line2: 'Sector 46, Gurugram, Haryana',
     full: 'House No. 540 LGF, Sector 46, Gurugram, Haryana',
+    locality: 'Sector 46',
+    city: 'Gurugram',
+    region: 'Haryana',
+    postalCode: '122003',
   },
   contact: {
     /** Display form for the UI */
     whatsappDisplay: '+91 92118 87308',
+    /** E.164 form for schema.org / tel: links */
+    telephone: '+919211887308',
   },
   team: {
     cofounder: {
@@ -23,8 +49,14 @@ export const siteConfig = {
   },
   socials: {
     instagram: 'https://www.instagram.com/mithaavastudio',
-    /** TODO(owner): replace with Google Maps place link */
+    facebook: 'https://www.facebook.com/mithaavastudio',
+    /** TODO(owner): replace with the verified Google Business Profile place link */
     googleMaps: '',
+    /**
+     * TODO(owner): paste the `src` from Google Maps → Share → Embed a map for the
+     * verified GMB pin. Falls back to a brand + address search embed when empty.
+     */
+    googleMapsEmbed: '',
     /** TODO(owner): replace with Google Business Profile link */
     googleBusinessProfile: '',
   },

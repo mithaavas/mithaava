@@ -16,6 +16,7 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { PlateCarousel } from '@/components/landing/PlateCarousel';
 import { WhatsAppIcon } from '@/components/brand/WhatsAppIcon';
+import { DeliveryAreas } from '@/components/seo/DeliveryAreas';
 import { Button } from '@/components/ui/Button';
 import { collections } from '@/data/collections';
 import { siteConfig } from '@/config/site';
@@ -28,6 +29,15 @@ import { formatINR } from '@/lib/format';
 import { buildWhatsAppUrl } from '@/lib/whatsapp';
 import { cn } from '@/lib/cn';
 import type { Product } from '@/domain/types';
+import { getCategoryPageForCollection } from '@/data/categoryPages';
+import { categoryPath } from '@/lib/seo';
+
+function collectionHref(collectionId: string): string {
+  const page = getCategoryPageForCollection(collectionId);
+  return page?.collectionIds[0] === collectionId
+    ? categoryPath(page.slug)
+    : `/menu/#collection-${collectionId}`;
+}
 
 const collectionPhotos: Record<string, string> = {
   'best-sellers': '/cakes/belgium-pineapple.jpg',
@@ -91,14 +101,14 @@ export function LandingPage() {
             {/* Copy */}
             <div className="relative z-10 flex flex-col px-6 pt-10 pb-8 sm:px-10 lg:min-h-[min(92vh,820px)] lg:justify-between lg:px-14 lg:pt-14 lg:pb-10">
               <div>
-                <motion.p
-                  className="text-[11px] font-semibold tracking-[0.18em] text-cocoa-800/45 uppercase sm:text-xs"
+                <motion.h1
+                  className="max-w-md text-[11px] leading-relaxed font-semibold tracking-[0.18em] text-cocoa-800/55 uppercase sm:text-xs"
                   initial={reduced ? false : { opacity: 0, y: 8 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4 }}
                 >
-                  {copy.landing.eyebrow}
-                </motion.p>
+                  {siteConfig.seo.heroHeading}
+                </motion.h1>
 
                 <motion.div
                   className="mt-5"
@@ -122,7 +132,7 @@ export function LandingPage() {
                     exit={reduced ? undefined : { opacity: 0, y: -8 }}
                     transition={{ duration: 0.35 }}
                   >
-                    <h1 className="mt-8 max-w-lg font-display text-[clamp(2rem,4.2vw,3.15rem)] leading-[1.08] font-semibold text-berry-600">
+                    <h2 className="mt-8 max-w-lg font-display text-[clamp(2rem,4.2vw,3.15rem)] leading-[1.08] font-semibold text-berry-600">
                       {active?.name ?? copy.landing.headline}
                       {active ? (
                         <Heart
@@ -130,7 +140,7 @@ export function LandingPage() {
                           aria-hidden
                         />
                       ) : null}
-                    </h1>
+                    </h2>
 
                     <p className="mt-4 max-w-md text-base leading-relaxed text-cocoa-800/70">
                       {blurb}
@@ -268,18 +278,30 @@ export function LandingPage() {
         >
           <div className="mx-auto max-w-6xl">
             <h2 className="font-display text-2xl text-teal-900 sm:text-3xl">
-              Our cakes
+              Fresh artisanal cakes from our Sector 46 bakery
             </h2>
-            <p className="mt-2 max-w-xl text-cocoa-800/75">
-              Pick a collection and build your order — delivery confirmed at
-              checkout.
+            <p className="mt-2 max-w-2xl text-cocoa-800/75">
+              Every cake is baked fresh in our Sector 46, Gurugram kitchen and
+              delivered 24/7 across Gurgaon. Try the{' '}
+              <Link href="/cakes/chocolate-cakes/" className="font-medium text-teal-700 underline-offset-2 hover:underline">
+                best chocolate truffle cakes
+              </Link>
+              , our{' '}
+              <Link href="/cakes/cheesecakes/" className="font-medium text-teal-700 underline-offset-2 hover:underline">
+                blueberry cheesecake
+              </Link>{' '}
+              or plan a{' '}
+              <Link href="/blog/midnight-cake-delivery-gurugram/" className="font-medium text-teal-700 underline-offset-2 hover:underline">
+                midnight cake delivery
+              </Link>
+              .
             </p>
 
             <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
               {collections.map((c) => (
                 <Link
                   key={c.id}
-                  href={`/menu/#collection-${c.id}`}
+                  href={collectionHref(c.id)}
                   className="group relative aspect-[4/3] overflow-hidden rounded-[1.25rem]"
                 >
                   <Image
@@ -306,6 +328,8 @@ export function LandingPage() {
             </div>
           </div>
         </section>
+
+        <DeliveryAreas />
       </main>
       <Footer />
     </>

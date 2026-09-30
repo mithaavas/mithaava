@@ -6,6 +6,7 @@ import { copy } from '@/content/copy';
 
 export const metadata: Metadata = {
   title: copy.cart.title,
+  alternates: { canonical: '/cart/' },
 };
 
 export default function CartPage() {

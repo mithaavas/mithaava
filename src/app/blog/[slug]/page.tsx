@@ -5,6 +5,8 @@ import { Footer } from '@/components/layout/Footer';
 import { BlogArticle } from '@/components/blog/BlogArticle';
 import { getAllBlogPosts, getBlogBySlug } from '@/data/blogs';
 import { productRepository } from '@/services/productRepository';
+import { JsonLd } from '@/components/seo/JsonLd';
+import { articleJsonLd, breadcrumbJsonLd } from '@/lib/seo';
 
 export function generateStaticParams() {
   return getAllBlogPosts().map((p) => ({ slug: p.slug }));
@@ -16,13 +18,21 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = getBlogBySlug(slug);
   if (!post) return { title: 'Blog' };
+  const title = post.metaTitle ?? post.title;
+  const description = post.metaDescription ?? post.excerpt;
+  const path = `/blog/${post.slug}/`;
   return {
-    title: post.title,
-    description: post.excerpt,
+    title,
+    description,
+    ...(post.keywords ? { keywords: post.keywords } : {}),
+    alternates: { canonical: path },
     openGraph: {
-      title: post.title,
-      description: post.excerpt,
-      images: [{ url: post.cover.src }],
+      type: 'article',
+      title,
+      description,
+      url: path,
+      publishedTime: post.date,
+      images: [{ url: post.cover.src, alt: post.cover.alt }],
     },
   };
 }
@@ -47,6 +57,16 @@ export default async function BlogPostPage({
 
   return (
     <>
+      <JsonLd
+        data={[
+          articleJsonLd(post),
+          breadcrumbJsonLd([
+            { name: 'Home', path: '/' },
+            { name: 'Blog', path: '/blog/' },
+            { name: post.title, path: `/blog/${post.slug}/` },
+          ]),
+        ]}
+      />
       <Header variant="shop" />
       <main>
         <BlogArticle post={post} relatedProducts={relatedProducts} />

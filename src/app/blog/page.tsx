@@ -6,8 +6,10 @@ import { getAllBlogPosts } from '@/data/blogs';
 import { copy } from '@/content/copy';
 
 export const metadata: Metadata = {
-  title: copy.blog.title,
-  description: copy.blog.subline,
+  title: 'Cake Guides — Midnight Cake Delivery & Birthday Cakes, Gurugram',
+  description:
+    'Guides from Mithaava bakery, Sector 46: midnight cake delivery in Gurugram, birthday cakes in Sector 46, anniversary cakes in Gurgaon, cake sizes and flavours.',
+  alternates: { canonical: '/blog/' },
 };
 
 export default function BlogIndexPage() {

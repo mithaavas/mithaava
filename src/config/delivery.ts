@@ -1,7 +1,7 @@
 /**
  * Delivery radius and serviceable pincodes around Sector 46, Gurugram.
  *
- * Coordinates approximate Sector 46; TODO(owner): verify House No. 540 LGF.
+ * Coordinates are the store pin for House No. 540 LGF, Sector 46.
  * Pincode list is derived from Haversine ≤10 km — TODO(owner): verify each
  * pincode is actually serviceable before launch. Do not present as accurate.
  */
@@ -9,9 +9,8 @@
 export const deliveryConfig = {
   radiusKm: 10,
   storeLocation: {
-    lat: 28.4359,
-    lng: 77.0584,
-    // TODO(owner): verify lat/lng for House No. 540 LGF, Sector 46
+    lat: 28.4355,
+    lng: 77.062,
   },
   /**
    * Optional neighbourhood labels for CoverageRings.

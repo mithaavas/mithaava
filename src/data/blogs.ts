@@ -1,11 +1,16 @@
 export type BlogSection =
   | { type: 'p'; text: string }
   | { type: 'h2'; text: string }
-  | { type: 'ul'; items: string[] };
+  | { type: 'ul'; items: string[] }
+  | { type: 'links'; items: { label: string; href: string }[] };
 
 export type BlogPost = {
   slug: string;
   title: string;
+  /** Search title when it should differ from the on-page heading */
+  metaTitle?: string;
+  metaDescription?: string;
+  keywords?: string[];
   excerpt: string;
   date: string;
   readMinutes: number;
@@ -19,6 +24,95 @@ export type BlogPost = {
  * Mithaava bakery blog — static posts for SEO and customer education.
  */
 export const blogPosts: BlogPost[] = [
+  {
+    slug: 'midnight-cake-delivery-gurugram',
+    title: 'Midnight cake delivery in Gurugram: the complete guide',
+    metaTitle: 'Midnight Cake Delivery in Gurugram — Birthday & Anniversary',
+    metaDescription:
+      'Planning a midnight surprise? How to get midnight cake delivery in Gurugram from Mithaava, Sector 46 — birthday cakes, anniversary cakes in Gurgaon, timings and tips.',
+    keywords: [
+      'midnight cake delivery in Gurugram',
+      'birthday cakes Sector 46',
+      'anniversary cakes Gurgaon',
+      '24 hour cake delivery Gurgaon',
+    ],
+    excerpt:
+      'Everything you need for a 12 a.m. surprise — how midnight cake delivery works in Gurugram, the best birthday and anniversary cakes, and how to time it perfectly.',
+    date: '2026-09-30',
+    readMinutes: 6,
+    cover: {
+      src: '/cakes/dark-chocolate-truffle.jpg',
+      alt: 'Dark chocolate truffle cake ready for a midnight birthday surprise in Gurugram',
+    },
+    tags: ['Midnight delivery', 'Birthdays', 'Anniversaries'],
+    relatedProductSlugs: ['ferrero-rocher', 'red-velvet', 'philippines-blueberry-cheese'],
+    sections: [
+      {
+        type: 'p',
+        text: 'There is something special about cutting a cake the moment the clock strikes twelve. The problem? Most bakeries in Gurugram are closed by then. Mithaava is open 24 hours in Sector 46, which means midnight cake delivery in Gurugram is not a special request for us — it is simply part of the day.',
+      },
+      { type: 'h2', text: 'How midnight cake delivery works at Mithaava' },
+      {
+        type: 'ul',
+        items: [
+          'Choose your cake and size on the Mithaava menu (U & Me, 500 gm or 1 kg)',
+          'Add a name or message for the cake',
+          'At checkout, pick the late-night delivery slot and send the order on WhatsApp',
+          'We confirm the timing, address and any gate or society instructions with you',
+          'Your cake is finished fresh and leaves the bakery so it arrives just before midnight',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Tip: order a few hours ahead, especially for cheesecakes and signature cakes, which need extra setting time. Same-evening orders are welcome — just message us early so we can plan the bake.',
+      },
+      { type: 'h2', text: 'Birthday cakes in Sector 46 for a midnight surprise' },
+      {
+        type: 'p',
+        text: 'Sector 46 is home, so birthday cakes here reach you fastest. Our most-loved midnight birthday cakes are the Ferrero Rocher cake for chocolate lovers, the classic Black Forest for families, and the Dark Chocolate Truffle when you want something rich and dramatic. For kids, the Kit Kat and Rainbow Cheese cakes always win.',
+      },
+      { type: 'h2', text: 'Anniversary cakes in Gurgaon, delivered at 12' },
+      {
+        type: 'p',
+        text: 'For anniversaries, our U & Me couple-size cake is made for exactly two people — a proper celebration cake without leftovers. Couples across Gurgaon often choose the Red Velvet with cream cheese frosting or the Philippines Blueberry Cheese Cake for a softer, elegant finish. Add a short message like “Happy Anniversary” or both your names.',
+      },
+      { type: 'h2', text: 'Where we deliver at midnight' },
+      {
+        type: 'p',
+        text: 'We deliver midnight cakes within 10 km of our Sector 46 bakery. That includes these neighbourhoods:',
+      },
+      {
+        type: 'links',
+        items: [
+          { label: 'Cake delivery on Sohna Road', href: '/cake-delivery/sohna-road/' },
+          { label: 'Cake delivery in Nirvana Country', href: '/cake-delivery/nirvana-country/' },
+          { label: 'Cake delivery in Sector 45', href: '/cake-delivery/sector-45/' },
+          { label: 'Cake delivery in Sector 47', href: '/cake-delivery/sector-47/' },
+          { label: 'Cake delivery in Sector 50', href: '/cake-delivery/sector-50/' },
+          { label: 'Cake delivery on Golf Course Extension Road', href: '/cake-delivery/golf-course-extension/' },
+        ],
+      },
+      { type: 'h2', text: 'Making the midnight moment perfect' },
+      {
+        type: 'ul',
+        items: [
+          'Share the recipient’s phone number only if they should receive the call — otherwise use yours',
+          'Mention society gate rules so the delivery is not held up at security',
+          'Keep candles and a knife ready; our cakes arrive chilled and ready to cut',
+          'Fresh cream cakes are best enjoyed the same night or refrigerated for the next day',
+        ],
+      },
+      { type: 'h2', text: 'Browse cakes for tonight' },
+      {
+        type: 'links',
+        items: [
+          { label: 'Best chocolate truffle cakes in Gurgaon', href: '/cakes/chocolate-cakes/' },
+          { label: 'Blueberry cheesecake & more cheesecakes', href: '/cakes/cheesecakes/' },
+          { label: 'Full cake menu', href: '/menu/' },
+        ],
+      },
+    ],
+  },
   {
     slug: 'perfect-cake-size-guide',
     title: 'How to pick the perfect cake size for your gathering',

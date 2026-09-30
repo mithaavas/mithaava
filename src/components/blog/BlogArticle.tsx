@@ -50,6 +50,22 @@ export function BlogArticle({
               </h2>
             );
           }
+          if (section.type === 'links') {
+            return (
+              <ul key={i} className="flex flex-wrap gap-2.5">
+                {section.items.map((item) => (
+                  <li key={item.href}>
+                    <Link
+                      href={item.href}
+                      className="inline-flex rounded-full border border-icing-300/80 bg-cream-50 px-4 py-2 text-sm font-medium text-teal-900 transition-colors hover:border-berry-600/50 hover:text-berry-600"
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            );
+          }
           if (section.type === 'ul') {
             return (
               <ul key={i} className="list-disc space-y-2 pl-5 marker:text-berry-600">

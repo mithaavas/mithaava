@@ -3,12 +3,14 @@ import Image from 'next/image';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { FssaiBadge } from '@/components/brand/FssaiBadge';
+import { MapEmbed } from '@/components/brand/MapEmbed';
 import { siteConfig } from '@/config/site';
 import { copy } from '@/content/copy';
 
 export const metadata: Metadata = {
-  title: copy.about.title,
-  description: copy.about.lead,
+  title: 'About Us — Artisanal Bakery in Sector 46, Gurugram',
+  description: `${copy.about.lead} Find us at ${siteConfig.address.full} — open 24 hours.`,
+  alternates: { canonical: '/about/' },
 };
 
 export default function AboutPage() {
@@ -89,7 +91,9 @@ export default function AboutPage() {
 
             <div className="mt-10 flex flex-col gap-5 rounded-[var(--radius-lg)] border border-icing-300/60 bg-cream-100/60 px-5 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-6">
               <div>
-                <p className="font-display text-lg text-teal-900">Find us</p>
+                <h2 className="font-display text-lg text-teal-900">
+                  Find us in {siteConfig.address.locality}, {siteConfig.address.city}
+                </h2>
                 <p className="mt-1 text-sm text-cocoa-800/80">
                   {siteConfig.address.full}
                 </p>
@@ -105,6 +109,8 @@ export default function AboutPage() {
                 <FssaiBadge variant="cream" className="shrink-0" />
               ) : null}
             </div>
+
+            <MapEmbed className="mt-6" />
           </div>
         </section>
       </main>

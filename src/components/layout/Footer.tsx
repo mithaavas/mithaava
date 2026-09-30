@@ -6,6 +6,9 @@ import { InstagramCta } from '@/components/brand/InstagramCta';
 import { WhatsAppIcon } from '@/components/brand/WhatsAppIcon';
 import { AggregatorButtons } from '@/components/aggregators/AggregatorButtons';
 import { siteConfig } from '@/config/site';
+import { getAllLocalities } from '@/data/localities';
+import { getAllCategoryPages } from '@/data/categoryPages';
+import { categoryPath, localityPath } from '@/lib/seo';
 import { copy } from '@/content/copy';
 
 export function Footer() {
@@ -45,6 +48,23 @@ export function Footer() {
               <WhatsAppIcon className="h-4 w-4 text-[#25D366]" />
               WhatsApp {siteConfig.contact.whatsappDisplay}
             </p>
+            <p className="mt-5 font-display text-base text-icing-200">
+              <Link href="/cake-delivery/" className="hover:underline">
+                We deliver to
+              </Link>
+            </p>
+            <ul className="mt-2 flex flex-wrap gap-x-3 gap-y-1.5 text-cream-50/75">
+              {getAllLocalities().map((l) => (
+                <li key={l.slug}>
+                  <Link
+                    href={localityPath(l.slug)}
+                    className="underline-offset-2 hover:text-cream-50 hover:underline"
+                  >
+                    {l.shortName}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
 
           <div>
@@ -59,6 +79,15 @@ export function Footer() {
               <Link href="/menu/" className="underline-offset-2 hover:underline">
                 Shop
               </Link>
+              {getAllCategoryPages().map((c) => (
+                <Link
+                  key={c.slug}
+                  href={categoryPath(c.slug)}
+                  className="underline-offset-2 hover:underline"
+                >
+                  {c.navLabel}
+                </Link>
+              ))}
               <Link href="/about/" className="underline-offset-2 hover:underline">
                 About
               </Link>

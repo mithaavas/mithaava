@@ -103,7 +103,7 @@ export function MenuPageClient() {
       <PageTransition>
         <main className="mx-auto max-w-6xl px-4 pb-28 sm:px-6">
           <div className="flex flex-col gap-4 py-6 sm:flex-row sm:items-center sm:justify-between">
-            <h1 className="font-display text-3xl text-teal-900">Menu</h1>
+            <h1 className="font-display text-3xl text-teal-900">Cake menu</h1>
             <SearchBar value={query} onChange={setQuery} />
           </div>
 

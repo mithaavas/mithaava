@@ -6,6 +6,7 @@ import { copy } from '@/content/copy';
 
 export const metadata: Metadata = {
   title: copy.checkout.title,
+  alternates: { canonical: '/checkout/' },
 };
 
 export default function CheckoutPage() {

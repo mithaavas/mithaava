@@ -46,7 +46,7 @@ Fill these before launch (search the repo for `TODO(owner)`):
 - [ ] FSSAI licence number
 - [ ] Confirm Strawberry Cheese Cake 500 g price (650 vs 600)
 - [ ] Confirm “Tiramishu” spelling vs “Tiramisu”
-- [ ] Replace `https://mithaava.example` metadata base URL when the domain is ready
+- [ ] Paste the verified Google Business Profile embed `src` into `siteConfig.socials.googleMapsEmbed`
 - [ ] Real product photography (stock Unsplash placeholders are in `public/cakes/` for V1)
 
 WhatsApp number is set to **+91 92118 87308** (`919211887308`). Instagram: [mithaavastudio](https://www.instagram.com/mithaavastudio).
