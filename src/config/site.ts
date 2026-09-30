@@ -1,7 +1,7 @@
 export const siteConfig = {
   brand: 'Mithaava',
   /** Canonical origin — no trailing slash. Update when a custom domain goes live. */
-  url: 'https://www.mithaava.com',
+  url: 'https://mithaava.com',
   /** Primary image for search / social cards */
   heroImage: '/images/hero-cake.jpg',
   seo: {
