@@ -49,6 +49,11 @@ export const metadata: Metadata = {
     'geo.position': `${deliveryConfig.storeLocation.lat};${deliveryConfig.storeLocation.lng}`,
     ICBM: `${deliveryConfig.storeLocation.lat}, ${deliveryConfig.storeLocation.lng}`,
   },
+  verification: {
+    other: {
+      'p:domain_verify': 'c320e7aee70a5d52e5322e851817ea5c',
+    },
+  },
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: '16x16 32x32 48x48' },
