@@ -1,17 +1,20 @@
+import { deliveryConfig } from '@/config/delivery';
 import { siteConfig } from '@/config/site';
 
-const placeQuery = `${siteConfig.brand}, ${siteConfig.address.full}`;
+// Address text searches resolve to other businesses until Mithaava has its own Google listing.
+const { lat, lng } = deliveryConfig.storeLocation;
+const coordinates = `${lat},${lng}`;
 
 export function getMapEmbedUrl(): string {
   return (
     siteConfig.socials.googleMapsEmbed ||
-    `https://www.google.com/maps?q=${encodeURIComponent(placeQuery)}&z=16&output=embed`
+    `https://www.google.com/maps?q=${coordinates}&z=17&output=embed`
   );
 }
 
 export function getMapLinkUrl(): string {
   return (
     siteConfig.socials.googleMaps ||
-    `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(placeQuery)}`
+    `https://www.google.com/maps/search/?api=1&query=${coordinates}`
   );
 }
