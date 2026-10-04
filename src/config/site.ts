@@ -96,9 +96,10 @@ export const siteConfig = {
     halfKg: { label: '500 gm' },
     oneKg: { label: '1 kg' },
     uAndMe: {
-      label: 'U & Me (200g)',
-      note: 'Couple-size cake — a small cake meant for 2 people.',
+      label: 'Bento (200g)',
+      note: 'Bento cake — our 200 g cake, just right for 2 people.',
     },
+    piece: { label: 'Each' },
   },
 } as const;
 

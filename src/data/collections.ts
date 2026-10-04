@@ -18,50 +18,25 @@ export type CollectionDefinition = {
 };
 
 /**
- * Display order for menu sections.
+ * Display order for menu sections (matches the Final Menu PDF).
+ * Some ids predate the section renames and are kept for stable anchors.
  */
 export const collections: CollectionDefinition[] = [
-  {
-    id: 'best-sellers',
-    label: 'Best Sellers',
-    gradientKey: 'best-sellers',
-  },
-  {
-    id: 'chocolate',
-    label: 'Chocolate Cakes',
-    gradientKey: 'chocolate',
-  },
-  {
-    id: 'cheese',
-    label: 'Cheese Cakes',
-    gradientKey: 'cheese',
-    leadTimeHours: 2,
-  },
-  {
-    id: 'signature',
-    label: 'Signature Cakes',
-    gradientKey: 'signature',
-    leadTimeHours: 6,
-  },
-  {
-    id: 'chocolate-recipe',
-    label: 'Chocolate Recipe',
-    gradientKey: 'chocolate-recipe',
-  },
-  {
-    id: 'favourites',
-    label: 'Seniors Favourite',
-    gradientKey: 'favourites',
-  },
-  {
-    id: 'fruit',
-    label: 'Fruit Cakes',
-    gradientKey: 'fruit',
-  },
+  { id: 'best-sellers', label: 'Best Sellers', gradientKey: 'best-sellers' },
+  { id: 'classic', label: 'Classic Cakes', gradientKey: 'favourites' },
+  { id: 'chocolate', label: 'Chocolate Cakes', gradientKey: 'chocolate' },
+  { id: 'chocolate-recipe', label: 'Chocolate Fusion Cakes', gradientKey: 'chocolate-recipe' },
+  { id: 'cheese', label: 'Cheesecakes & Desserts', gradientKey: 'cheese', leadTimeHours: 2 },
+  { id: 'fruit', label: 'Fruit & Nut Cakes', gradientKey: 'fruit' },
+  { id: 'celebration', label: 'Celebration Cakes', gradientKey: 'signature' },
+  { id: 'pastries', label: 'Pastries', gradientKey: 'best-sellers' },
+  { id: 'brownies', label: 'Brownies', gradientKey: 'chocolate' },
+  { id: 'cupcakes', label: 'Cupcakes', gradientKey: 'cheese' },
+  { id: 'jar-cakes', label: 'Jar Cakes', gradientKey: 'chocolate-recipe' },
 ];
 
 export const collectionById: Record<string, CollectionDefinition> =
   Object.fromEntries(collections.map((c) => [c.id, c]));
 
-/** Display order matches common cake weight pickers: smaller → larger, then U & Me. */
+/** Display order matches common cake weight pickers: smaller → larger, then Bento. */
 export const sizeOrder: SizeKey[] = ['halfKg', 'oneKg', 'uAndMe'];

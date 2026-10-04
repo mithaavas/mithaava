@@ -43,10 +43,14 @@ const collectionPhotos: Record<string, string> = {
   'best-sellers': '/cakes/belgium-pineapple.jpg',
   chocolate: '/cakes/chocolate.jpg',
   cheese: '/cakes/philippines-blueberry-cheese.jpg',
-  signature: '/cakes/red-velvet.jpg',
-  'chocolate-recipe': '/cakes/choco-fudge.jpg',
-  favourites: '/cakes/pineapple.jpg',
+  classic: '/cakes/black-forest.jpg',
+  'chocolate-recipe': '/cakes/choco-walnut.jpg',
   fruit: '/cakes/fresh-fruit.jpg',
+  celebration: '/cakes/red-velvet.jpg',
+  pastries: '/cakes/cake-slice-berry.jpg',
+  brownies: '/cakes/choco-fudge.jpg',
+  cupcakes: '/cakes/strawberry.jpg',
+  'jar-cakes': '/cakes/tiramishu.jpg',
 };
 
 const benefitIcons = {

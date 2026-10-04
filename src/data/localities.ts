@@ -49,7 +49,7 @@ export const localities: Locality[] = [
       'Sohna Road is one of our busiest delivery routes. From offices to high-rise societies, we bring freshly finished Mithaava cakes straight from our Sector 46 kitchen — any hour of the day.',
     body: [
       'Sohna Road sits right next to Sector 46, which means shorter travel time and cakes that arrive looking exactly the way they left the bakery. Fresh cream cakes stay cool, cheese cakes stay set, and toppings stay in place.',
-      'Planning a team celebration or a late-night birthday surprise? Order a 1 kg cake for the office, or a U & Me couple-size cake when it is just the two of you.',
+      'Planning a team celebration or a late-night birthday surprise? Order a 1 kg cake for the office, or a 200 g Bento cake when it is just the two of you.',
     ],
     neighbourhoods: ['Subhash Chowk', 'South City II', 'Vatika City', 'Malibu Towne'],
     pincodes: ['122018'],
@@ -68,7 +68,7 @@ export const localities: Locality[] = [
       'Birthdays at home, anniversaries in the garden, a quiet dessert after dinner — Mithaava delivers freshly baked cakes to every block of Nirvana Country.',
     body: [
       'Nirvana Country is a short, easy drive from our Sector 46 bakery, so your cake reaches your gate fresh and properly chilled. Just share your block and house number and we will handle the rest.',
-      'Family favourites here include our classic Black Forest, the Philippines Blueberry Cheese cake and rich chocolate truffle cakes for the kids.',
+      'Family favourites here include our classic Black Forest, the Blueberry Cheesecake and rich chocolate truffle cakes for the kids.',
     ],
     neighbourhoods: ['Nirvana Country (Sector 50)', 'South City II', 'Rosewood City', 'Mayfield Garden'],
     pincodes: ['122018'],
@@ -87,7 +87,7 @@ export const localities: Locality[] = [
       'Sector 45 is practically next door to our kitchen in Sector 46. That makes Mithaava one of the quickest ways to get a fresh, made-with-care cake to your doorstep.',
     body: [
       'Because we are so close, Sector 45 is ideal for last-minute celebrations — a surprise cake for a friend, a small cake for a puja, or dessert for unexpected guests.',
-      'Try our Mithaava Specials: the Ferrero Rocher cake, the Red Velvet and the Philippines Blueberry Cheese cake.',
+      'Try our Mithaava Specials: the Ferrero Rocher cake, the Red Velvet and the Blueberry Cheesecake.',
     ],
     neighbourhoods: ['Sector 45', 'Kanhai', 'Sector 46 border'],
     pincodes: ['122003'],

@@ -3,7 +3,7 @@ import { deliveryConfig } from '@/config/delivery';
 import { getAllLocalities, type Locality } from '@/data/localities';
 import { getMapLinkUrl } from '@/lib/maps';
 import { whatsappConfig } from '@/config/whatsapp';
-import { lowestAvailablePrice } from '@/domain/pricing';
+import { isSoldByPiece, lowestAvailablePrice } from '@/domain/pricing';
 import type { Product, SizeKey } from '@/domain/types';
 import type { BlogPost } from '@/data/blogs';
 import { productBlurbs } from '@/data/productSeo';
@@ -181,7 +181,7 @@ export function productJsonLd(product: Product) {
     description: productSeoDescription(product),
     ...(product.image ? { image: absoluteUrl(product.image.src) } : {}),
     brand: { '@type': 'Brand', name: siteConfig.brand },
-    category: 'Cakes',
+    category: isSoldByPiece(product) ? 'Bakery' : 'Cakes',
     url: absoluteUrl(`/menu/${product.slug}/`),
     offers,
   };

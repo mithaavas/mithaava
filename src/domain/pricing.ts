@@ -4,7 +4,7 @@ export function getUnitPrice(
   product: Product,
   size: SizeKey,
 ): number | null {
-  return product.prices[size];
+  return product.prices[size] ?? null;
 }
 
 export function isSizeAvailable(
@@ -12,7 +12,12 @@ export function isSizeAvailable(
   size: SizeKey,
 ): boolean {
   const price = product.prices[size];
-  return price !== null && price > 0;
+  return price != null && price > 0;
+}
+
+/** Items like pastries and brownies have a single price and no size choice. */
+export function isSoldByPiece(product: Product): boolean {
+  return isSizeAvailable(product, 'piece');
 }
 
 export function lineTotal(
@@ -55,9 +60,8 @@ export function lowestAvailablePrice(product: Product): number | null {
   let lowest: number | null = null;
   for (const size of Object.keys(product.prices) as SizeKey[]) {
     const price = product.prices[size];
-    if (price === null || price <= 0) continue;
+    if (price == null || price <= 0) continue;
     if (lowest === null || price < lowest) lowest = price;
   }
   return lowest;
 }
-

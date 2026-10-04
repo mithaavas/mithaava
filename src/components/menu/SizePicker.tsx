@@ -4,7 +4,7 @@
 import type { Product, SizeKey } from '@/domain/types';
 import { siteConfig } from '@/config/site';
 import { sizeOrder } from '@/data/collections';
-import { isSizeAvailable } from '@/domain/pricing';
+import { isSizeAvailable, isSoldByPiece } from '@/domain/pricing';
 import { copy } from '@/content/copy';
 import { SegmentedControl } from '@/components/ui/SegmentedControl';
 
@@ -17,6 +17,7 @@ export function SizePicker({
   value: SizeKey;
   onChange: (size: SizeKey) => void;
 }) {
+  if (isSoldByPiece(product)) return null;
   const options = sizeOrder.map((size) => ({
     value: size,
     label: siteConfig.sizeLabels[size].label,
@@ -40,6 +41,7 @@ export function SizePicker({
 
 /** Prefer siteConfig.defaultSize, then first available size. */
 export function defaultAvailableSize(product: Product): SizeKey {
+  if (isSoldByPiece(product)) return 'piece';
   const preferred = siteConfig.defaultSize;
   if (isSizeAvailable(product, preferred)) return preferred;
   for (const size of sizeOrder) {

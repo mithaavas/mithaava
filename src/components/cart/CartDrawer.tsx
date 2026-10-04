@@ -39,8 +39,7 @@ export function CartDrawer() {
   const leadNotice = useMemo(() => {
     const hours = maxLeadTimeHours(lines.map((l) => l.product?.leadTimeHours));
     if (hours < 2) return null;
-    const label = hours >= 6 ? 'Signature' : 'Cheese';
-    return copy.cart.leadTimeNotice(label, hours);
+    return copy.cart.leadTimeNotice(hours);
   }, [lines]);
 
   return (

@@ -20,10 +20,7 @@ export function CartPageClient() {
   const { toast } = useToast();
 
   const hours = maxLeadTimeHours(lines.map((l) => l.product?.leadTimeHours));
-  const leadNotice =
-    hours >= 2
-      ? copy.cart.leadTimeNotice(hours >= 6 ? 'Signature' : 'Cheese', hours)
-      : null;
+  const leadNotice = hours >= 2 ? copy.cart.leadTimeNotice(hours) : null;
 
   return (
     <PageTransition>

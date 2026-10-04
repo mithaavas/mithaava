@@ -4,7 +4,8 @@ import { cn } from '@/lib/cn';
 const badgeLabel: Record<ProductBadge, string> = {
   'premium-superhit': 'Premium SuperHit',
   'all-time-hit': 'All Time Hit',
-  'chefs-fav': "Chef's Fav",
+  'chefs-fav': "Chef's Special",
+  new: 'New',
 };
 
 export function Badge({

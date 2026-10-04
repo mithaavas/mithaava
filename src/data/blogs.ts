@@ -55,7 +55,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'ul',
         items: [
-          'Choose your cake and size on the Mithaava menu (U & Me, 500 gm or 1 kg)',
+          'Choose your cake and size on the Mithaava menu (Bento, 500 gm or 1 kg)',
           'Add a name or message for the cake',
           'At checkout, pick the late-night delivery slot and send the order on WhatsApp',
           'We confirm the timing, address and any gate or society instructions with you',
@@ -69,12 +69,12 @@ export const blogPosts: BlogPost[] = [
       { type: 'h2', text: 'Birthday cakes in Sector 46 for a midnight surprise' },
       {
         type: 'p',
-        text: 'Sector 46 is home, so birthday cakes here reach you fastest. Our most-loved midnight birthday cakes are the Ferrero Rocher cake for chocolate lovers, the classic Black Forest for families, and the Dark Chocolate Truffle when you want something rich and dramatic. For kids, the Kit Kat and Rainbow Cheese cakes always win.',
+        text: 'Sector 46 is home, so birthday cakes here reach you fastest. Our most-loved midnight birthday cakes are the Ferrero Rocher cake for chocolate lovers, the classic Black Forest for families, and the Dark Chocolate Truffle when you want something rich and dramatic. For kids, the KitKat cake and Rainbow Cheesecake always win.',
       },
       { type: 'h2', text: 'Anniversary cakes in Gurgaon, delivered at 12' },
       {
         type: 'p',
-        text: 'For anniversaries, our U & Me couple-size cake is made for exactly two people — a proper celebration cake without leftovers. Couples across Gurgaon often choose the Red Velvet with cream cheese frosting or the Philippines Blueberry Cheese Cake for a softer, elegant finish. Add a short message like “Happy Anniversary” or both your names.',
+        text: 'For anniversaries, our 200 g Bento cake is made for exactly two people — a proper celebration cake without leftovers. Couples across Gurgaon often choose the Red Velvet with cream cheese frosting or the Blueberry Cheesecake for a softer, elegant finish. Add a short message like “Happy Anniversary” or both your names.',
       },
       { type: 'h2', text: 'Where we deliver at midnight' },
       {
@@ -117,10 +117,10 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'perfect-cake-size-guide',
     metaDescription:
-      'How big a cake do you need? U & Me for two, 500 gm for 4–6 and 1 kg for 8–12 guests — Mithaava\'s simple cake size guide for Gurugram parties.',
+      'How big a cake do you need? Bento for two, 500 gm for 4–6 and 1 kg for 8–12 guests — Mithaava\'s simple cake size guide for Gurugram parties.',
     title: 'How to pick the perfect cake size for your gathering',
     excerpt:
-      'U & Me for two, 500 gm for a small celebration, 1 kg when the table is full — a simple size guide for Gurugram parties.',
+      'Bento for two, 500 gm for a small celebration, 1 kg when the table is full — a simple size guide for Gurugram parties.',
     date: '2026-09-12',
     readMinutes: 5,
     cover: {
@@ -134,10 +134,10 @@ export const blogPosts: BlogPost[] = [
         type: 'p',
         text: 'The easiest way to disappoint a table is a cake that disappears in three minutes — or one that sits half-eaten. At Mithaava we offer three practical sizes so you can match the cake to the moment, not the other way around.',
       },
-      { type: 'h2', text: 'U & Me — the couple cake' },
+      { type: 'h2', text: 'Bento — the 200 g cake for two' },
       {
         type: 'p',
-        text: 'Our U & Me size is meant for two people. It is ideal for anniversaries, proposals, late-night sweet cravings, or when you want a proper celebration cake without leftovers. Think of it as a mini centrepiece.',
+        text: 'Our 200 g Bento size is meant for two people. It is ideal for anniversaries, proposals, late-night sweet cravings, or when you want a proper celebration cake without leftovers. Think of it as a mini centrepiece.',
       },
       { type: 'h2', text: '500 gm — small gatherings' },
       {
@@ -152,7 +152,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'ul',
         items: [
-          '2 people → U & Me',
+          '2 people → Bento',
           '4–6 people → 500 gm',
           '8–12 people → 1 kg',
           'Larger groups → two cakes in different flavours',
@@ -251,10 +251,10 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'birthday-cakes-sector-46',
     metaDescription:
-      'Birthday cake ideas loved in Sector 46, Gurugram — from Black Forest and Ferrero Rocher to Kit Kat cakes for kids. Baked fresh, delivered 24/7.',
+      'Birthday cake ideas loved in Sector 46, Gurugram — from Black Forest and Ferrero Rocher to KitKat cakes for kids. Baked fresh, delivered 24/7.',
     title: 'Birthday cake ideas beloved in Sector 46',
     excerpt:
-      'From Black Forest classics to Kit Kat fun — flavours that keep showing up at neighbourhood parties.',
+      'From Black Forest classics to KitKat fun — flavours that keep showing up at neighbourhood parties.',
     date: '2026-08-28',
     readMinutes: 6,
     cover: {
@@ -273,8 +273,8 @@ export const blogPosts: BlogPost[] = [
         type: 'ul',
         items: [
           'Black Forest — cherries, cream, nostalgia; safe for almost every age group',
-          'Kit Kat & Choco Oreo — playful textures kids (and adults) recognise',
-          'Belgium Pineapple — bright and refreshing when the weather is warm',
+          'KitKat & Chocolate Oreo — playful textures kids (and adults) recognise',
+          'Belgian Pineapple — bright and refreshing when the weather is warm',
           'Ferrero Rocher — when the birthday person wants something premium',
         ],
       },
@@ -317,7 +317,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'ul',
         items: [
-          'Philippines Blueberry — bright berry top, elegant for dinners and office treats',
+          'Blueberry Cheesecake — bright berry top, elegant for dinners and office treats',
           'Mango Cheese — summer favourite; sunny and fragrant',
           'Strawberry Cheese — classic pink appeal for birthdays',
           'Rainbow Cheese — when you want colour and conversation at the table',
@@ -364,7 +364,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'It is available in U & Me, 500 gm and 1 kg. For a quiet dinner for two, U & Me feels extravagant without waste. For a larger table, 1 kg becomes the centrepiece — no other dessert required.',
+        text: 'It is available in Bento, 500 gm and 1 kg. For a quiet dinner for two, Bento feels extravagant without waste. For a larger table, 1 kg becomes the centrepiece — no other dessert required.',
       },
       {
         type: 'p',
@@ -452,7 +452,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'White Forest, Pineapple, and Truffle Fresh Cream are popular fresh-cream leaning choices on our menu. Fruit-forward cakes also shine with cream rather than thick chocolate frosting.',
+        text: 'White Forest, Pineapple, and Fresh Cream Truffle are popular fresh-cream leaning choices on our menu. Fruit-forward cakes also shine with cream rather than thick chocolate frosting.',
       },
       {
         type: 'p',

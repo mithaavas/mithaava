@@ -1,9 +1,11 @@
-export type SizeKey = 'oneKg' | 'halfKg' | 'uAndMe';
+/** `piece` is for items sold individually (pastries, brownies, boxes). */
+export type SizeKey = 'oneKg' | 'halfKg' | 'uAndMe' | 'piece';
 
 export type ProductBadge =
   | 'premium-superhit'
   | 'all-time-hit'
-  | 'chefs-fav';
+  | 'chefs-fav'
+  | 'new';
 
 export type ProductImage = {
   src: string;
@@ -16,8 +18,8 @@ export type Product = {
   name: string;
   /** First entry is the primary collection */
   collections: string[];
-  /** null = not available ("NE" on the menu) */
-  prices: Record<SizeKey, number | null>;
+  /** null or missing = not available ("NE" on the menu) */
+  prices: Partial<Record<SizeKey, number | null>>;
   badges?: ProductBadge[];
   note?: string;
   leadTimeHours?: number;

@@ -53,7 +53,7 @@ export const categoryPages: CategoryPage[] = [
     sections: [
       {
         heading: 'What makes a great chocolate truffle cake',
-        body: 'A real truffle cake is about the ganache: smooth, deep and not overly sweet, layered between soft chocolate sponge. Our Dark Chocolate Truffle, Belgium Truffle and Truffle Fresh Cream cakes are each finished by hand, so every slice has that dense, melt-in-the-mouth centre.',
+        body: 'A real truffle cake is about the ganache: smooth, deep and not overly sweet, layered between soft chocolate sponge. Our Dark Chocolate Truffle, Belgian Truffle and Fresh Cream Truffle cakes are each finished by hand, so every slice has that dense, melt-in-the-mouth centre.',
       },
       {
         heading: 'Ferrero Rocher cake delivery in Gurugram',
@@ -61,13 +61,13 @@ export const categoryPages: CategoryPage[] = [
       },
       {
         heading: 'Order a dark chocolate cake online',
-        body: 'Pick your cake and size (500 gm, 1 kg or the U & Me couple cake), add a message, and send the order on WhatsApp. Because we are open 24 hours, you can order a dark chocolate cake online for a midnight surprise or a same-day celebration.',
+        body: 'Pick your cake and size (500 gm, 1 kg or the 200 g Bento cake), add a message, and send the order on WhatsApp. Because we are open 24 hours, you can order a dark chocolate cake online for a midnight surprise or a same-day celebration.',
       },
     ],
     faqs: [
       {
         q: 'Which is the best chocolate truffle cake at Mithaava?',
-        a: 'For pure chocolate lovers, the Dark Chocolate Truffle Cake is our richest option. If you prefer something lighter, try the Truffle Fresh Cream Cake; for a premium finish, go for the Belgium Truffle or Ferrero Rocher cake.',
+        a: 'For pure chocolate lovers, the Dark Chocolate Truffle Cake is our richest option. If you prefer something lighter, try the Fresh Cream Truffle Cake; for a premium finish, go for the Belgian Truffle or Ferrero Rocher cake.',
       },
       {
         q: 'Do you deliver Ferrero Rocher cakes across Gurgaon?',
@@ -97,16 +97,16 @@ export const categoryPages: CategoryPage[] = [
       'mango cheese cake',
       'cheesecake delivery Gurgaon',
     ],
-    metaTitle: 'Blueberry Cheesecake in Gurugram — Mango Cheese Cake & More',
+    metaTitle: 'Blueberry Cheesecake in Gurugram — Mango Cheesecake & More',
     metaDescription:
       'Blueberry cheesecake in Gurugram from Mithaava, Sector 46 — plus mango, strawberry & rainbow cheesecakes. Fresh, chilled and delivered 24/7.',
     heading: 'Blueberry cheesecake in Gurugram',
     intro:
-      'Silky, rich and chilled to perfection — Mithaava cheesecakes are made fresh in our Sector 46 kitchen and delivered across Gurugram. Our signature Philippines Blueberry Cheese Cake leads the collection, alongside mango, strawberry and rainbow cheesecakes.',
+      'Silky, rich and chilled to perfection — Mithaava cheesecakes are made fresh in our Sector 46 kitchen and delivered across Gurugram. Our signature Blueberry Cheesecake leads the collection, alongside mango, strawberry and rainbow cheesecakes.',
     sections: [
       {
         heading: 'Our signature blueberry cheesecake',
-        body: 'The Philippines Blueberry Cheese Cake is one of our three Mithaava Specials: a creamy cheese layer with a bright blueberry topping that balances sweet and tangy. It is the cheesecake most Gurugram customers order for birthdays, anniversaries and dinner parties.',
+        body: 'The Blueberry Cheesecake is one of our three Mithaava Specials: a creamy cheese layer with a bright blueberry topping that balances sweet and tangy. It is the cheesecake most Gurugram customers order for birthdays, anniversaries and dinner parties.',
       },
       {
         heading: 'Looking for a New York baked cheesecake near you?',
@@ -114,13 +114,13 @@ export const categoryPages: CategoryPage[] = [
       },
       {
         heading: 'Mango cheese cake and more flavours',
-        body: 'Our Mango Cheese Cake is a summer favourite with a smooth mango finish, while the Strawberry Cheese Cake and colourful Rainbow Cheese Cake are perfect for kids’ parties. Cheesecakes need a little extra setting time, so order a couple of hours ahead.',
+        body: 'Our Mango Cheesecake is a summer favourite with a smooth mango finish, while the Strawberry Cheesecake and colourful Rainbow Cheesecake are perfect for kids’ parties. Cheesecakes need a little extra setting time, so order a couple of hours ahead.',
       },
     ],
     faqs: [
       {
         q: 'Where can I get a blueberry cheesecake in Gurugram?',
-        a: 'Mithaava bakery in Sector 46, Gurugram makes a fresh Philippines Blueberry Cheese Cake and delivers it within 10 km, 24 hours a day.',
+        a: 'Mithaava bakery in Sector 46, Gurugram makes a fresh Blueberry Cheesecake and delivers it within 10 km, 24 hours a day.',
       },
       {
         q: 'How far in advance should I order a cheesecake?',
@@ -128,7 +128,7 @@ export const categoryPages: CategoryPage[] = [
       },
       {
         q: 'Do you have a mango cheese cake?',
-        a: 'Yes — our Mango Cheese Cake comes in the U & Me couple size, 500 gm and 1 kg. Check the product page for current prices.',
+        a: 'Yes — our Mango Cheesecake comes in the 200 g Bento size, 500 gm and 1 kg. Check the product page for current prices.',
       },
     ],
     relatedBlogSlugs: ['cheese-cake-flavours-guide', 'perfect-cake-size-guide', 'midnight-cake-delivery-gurugram'],
@@ -175,11 +175,11 @@ export const categoryPages: CategoryPage[] = [
     sections: [
       {
         heading: 'Birthday cakes in Sector 46, delivered at midnight',
-        body: 'Sector 46 is home, so midnight birthday cakes here arrive fastest. Our Ferrero Rocher, Dark Chocolate Truffle and classic Black Forest cakes are the most ordered for 12 AM birthday surprises, and the Kit Kat cake is a favourite for kids and teens.',
+        body: 'Sector 46 is home, so midnight birthday cakes here arrive fastest. Our Ferrero Rocher, Dark Chocolate Truffle and classic Black Forest cakes are the most ordered for 12 AM birthday surprises, and the KitKat cake is a favourite for kids and teens.',
       },
       {
         heading: 'Anniversary cakes in Gurgaon for two',
-        body: 'Pick our U & Me couple-size cake for an anniversary at midnight — a proper celebration cake made for exactly two people. Red Velvet with cream cheese frosting and the Philippines Blueberry Cheese Cake are the couple favourites across Gurgaon.',
+        body: 'Pick our 200 g Bento cake for an anniversary at midnight — a proper celebration cake made for exactly two people. Red Velvet with cream cheese frosting and the Blueberry Cheesecake are the couple favourites across Gurgaon.',
       },
       {
         heading: 'How to book a midnight cake',

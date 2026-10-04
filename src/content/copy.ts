@@ -40,9 +40,19 @@ export const copy = {
     primaryOutside: 'Order on Swiggy or Zomato',
   },
   menu: {
+    heading: 'Mithaava menu',
+    tabs: {
+      cake: 'Cake',
+      decoration: 'Decoration',
+      gifts: 'Gifts',
+      comingSoon: 'Coming soon',
+    },
+    comingSoonTitle: (label: string) => `${label} is coming soon`,
+    comingSoonBody:
+      'We are putting this collection together. Meanwhile, message us on WhatsApp and we will help you plan it with your cake.',
     searchPlaceholder: 'Search cakes',
     searchEmpty: (query: string) =>
-      `No cakes match '${query}'. Try 'chocolate' or 'fruit'.`,
+      `No items match '${query}'. Try 'chocolate', 'brownie' or 'pastry'.`,
     notAvailable: 'Not available',
     orderHoursAhead: (hours: number) => `Order ${hours} hours ahead`,
     addToCart: 'Add to cart',
@@ -63,8 +73,8 @@ export const copy = {
     emptyAction: 'Browse the menu',
     continue: 'Continue to details',
     deliveryNote: 'Delivery charges are confirmed on WhatsApp',
-    leadTimeNotice: (label: string, hours: number) =>
-      `Your cart has a ${label} cake. Earliest delivery is ${hours} hours from now`,
+    leadTimeNotice: (hours: number) =>
+      `Some cakes in your cart need extra time. Earliest delivery is ${hours} hours from now`,
     viewCart: 'View cart',
     itemsSummary: (count: number, total: string) =>
       `${count} ${count === 1 ? 'item' : 'items'} · ${total}`,
