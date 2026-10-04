@@ -10,7 +10,7 @@ export const deliveryConfig = {
   radiusKm: 10,
   storeLocation: {
     lat: 28.4355,
-    lng: 77.062,
+    lng: 77.0535,
   },
   /**
    * Optional neighbourhood labels for CoverageRings.
