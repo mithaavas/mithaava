@@ -25,7 +25,7 @@ export function MenuPageClient() {
   const [query, setQuery] = useState('');
   const [activeId, setActiveId] = useState(collections[0]?.id ?? '');
   const [, startTransition] = useTransition();
-  const observerRef = useRef<IntersectionObserver | null>(null);
+  const scrollLockUntil = useRef(0);
 
   const favoriteProducts = useMemo(() => {
     if (!ready || favoriteIds.length === 0) return [];
@@ -46,31 +46,42 @@ export function MenuPageClient() {
   }, [products, query]);
 
   useEffect(() => {
-    observerRef.current?.disconnect();
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((e) => e.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        if (visible?.target.id.startsWith('collection-')) {
-          startTransition(() => {
-            setActiveId(visible.target.id.replace('collection-', ''));
-          });
-        }
-      },
-      { rootMargin: '-40% 0px -45% 0px', threshold: [0.1, 0.4] },
-    );
-    observerRef.current = observer;
+    if (filtered || loading) return;
     const sectionIds = [
       ...(favoriteProducts.length > 0 ? [YOUR_FAVOURITES_ID] : []),
       ...collections.map((c) => c.id),
     ];
-    sectionIds.forEach((id) => {
-      const el = document.getElementById(`collection-${id}`);
-      if (el) observer.observe(el);
-    });
-    return () => observer.disconnect();
-  }, [products, filtered, favoriteProducts.length, startTransition]);
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      if (Date.now() < scrollLockUntil.current) return;
+      const railBottom =
+        document.querySelector('nav[aria-label="Collections"]')?.getBoundingClientRect()
+          .bottom ?? 0;
+      const line = railBottom + 24;
+      const atBottom =
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+      let current = sectionIds[0];
+      for (const id of sectionIds) {
+        const el = document.getElementById(`collection-${id}`);
+        if (!el) continue;
+        if (el.getBoundingClientRect().top <= line) current = id;
+      }
+      if (atBottom) current = sectionIds[sectionIds.length - 1];
+      if (current) startTransition(() => setActiveId(current));
+    };
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+    update();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+      if (frame) cancelAnimationFrame(frame);
+    };
+  }, [products, filtered, loading, favoriteProducts.length, startTransition]);
 
   useEffect(() => {
     const hash = window.location.hash.replace('#', '');
@@ -122,6 +133,7 @@ export function MenuPageClient() {
                 activeId={activeId}
                 onSelect={(id) => {
                   setActiveId(id);
+                  scrollLockUntil.current = Date.now() + 900;
                   document
                     .getElementById(`collection-${id}`)
                     ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
