@@ -71,7 +71,7 @@ export const categoryPages: CategoryPage[] = [
       },
       {
         q: 'Do you deliver Ferrero Rocher cakes across Gurgaon?',
-        a: 'Yes. We deliver Ferrero Rocher cakes within 10 km of our Sector 46 bakery, including Sohna Road, Nirvana Country, Sectors 45, 47 and 50, and Golf Course Extension Road.',
+        a: 'Yes. We deliver Ferrero Rocher cakes across Delhi NCR from our Sector 46 bakery, including Sohna Road, Nirvana Country, Sectors 45, 47 and 50, and Golf Course Extension Road.',
       },
       {
         q: 'Can I order a chocolate cake online at midnight?',
@@ -120,7 +120,7 @@ export const categoryPages: CategoryPage[] = [
     faqs: [
       {
         q: 'Where can I get a blueberry cheesecake in Gurugram?',
-        a: 'Mithaava bakery in Sector 46, Gurugram makes a fresh Blueberry Cheesecake and delivers it within 10 km, 24 hours a day.',
+        a: 'Mithaava bakery in Sector 46, Gurugram makes a fresh Blueberry Cheesecake and delivers it across Delhi NCR, 24 hours a day.',
       },
       {
         q: 'How far in advance should I order a cheesecake?',
@@ -168,7 +168,7 @@ export const categoryPages: CategoryPage[] = [
     ],
     metaTitle: 'Midnight Cake Delivery in Gurugram — Delivered at 12 AM',
     metaDescription:
-      'Midnight cake delivery in Gurugram from Mithaava, open 24/7 in Sector 46. Birthday & anniversary cakes delivered at 12 AM within 10 km.',
+      'Midnight cake delivery in Gurugram from Mithaava, open 24/7 in Sector 46. Birthday & anniversary cakes delivered at 12 AM across Delhi NCR.',
     heading: 'Midnight cake delivery in Gurugram',
     intro:
       'Surprise them the moment the clock strikes twelve. Mithaava is open 24 hours in Sector 46, so midnight cake delivery across Gurugram is part of our everyday — freshly finished birthday and anniversary cakes, delivered right on time.',
@@ -189,7 +189,7 @@ export const categoryPages: CategoryPage[] = [
     faqs: [
       {
         q: 'Do you deliver cakes at midnight in Gurugram?',
-        a: 'Yes. Mithaava is open 24 hours and delivers midnight cakes within 10 km of our Sector 46 bakery, including Sohna Road, Nirvana Country, Sectors 45, 47 and 50, and Golf Course Extension Road.',
+        a: 'Yes. Mithaava is open 24 hours and delivers midnight cakes across Delhi NCR from our Sector 46 bakery, including Sohna Road, Nirvana Country, Sectors 45, 47 and 50, and Golf Course Extension Road.',
       },
       {
         q: 'How early should I order a midnight cake?',

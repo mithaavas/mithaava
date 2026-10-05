@@ -8,7 +8,7 @@ export const copy = {
   landing: {
     headline: 'Fresh cakes, baked in Sector 46.',
     subline: 'Browse the menu, then confirm delivery at checkout.',
-    pincodeHelper: 'We deliver within 10 km of Sector 46, Gurugram',
+    pincodeHelper: 'We deliver across Delhi NCR from Sector 46, Gurugram',
     eyebrow: 'Premium cakes · Freshly baked · Delivered with love',
     scriptLine: 'Indulge the Sweetness of Happiness',
     specialsLabel: 'Mithaava Specials',
@@ -18,18 +18,18 @@ export const copy = {
     whatsAppPrefill: 'Hi Mithaava! I would like to order a cake.',
     benefits: [
       { id: 'fresh', title: 'Freshly baked', body: 'Everyday' },
-      { id: 'delivery', title: 'Quick delivery', body: 'Within 10 km' },
+      { id: 'delivery', title: 'Quick delivery', body: 'All of Delhi NCR' },
       { id: 'hours', title: 'Open 24 hours', body: 'Order anytime' },
       { id: 'love', title: 'Made with love', body: 'For celebrations' },
     ],
   },
   pincode: {
     label: 'Pincode',
-    placeholder: '122xxx',
+    placeholder: '110xxx / 122xxx',
     invalid: 'Enter a 6-digit pincode',
     serviceable: (pincode: string) => `We deliver to ${pincode}`,
     unserviceable: (pincode: string) =>
-      `We don't deliver to ${pincode} directly yet. You can still order Mithaava cakes on Swiggy or Zomato.`,
+      `${pincode} is outside Delhi NCR, so we can't deliver there yet.`,
     tryAnother: 'Try another pincode',
     startShopping: 'Start shopping',
     change: 'Change',
@@ -130,7 +130,7 @@ export const copy = {
       },
       {
         title: 'Neighbourhood first',
-        body: 'Delivery within about 10 km of Sector 46, Gurugram.',
+        body: 'Delivery across Delhi NCR — Gurugram, Delhi, Noida, Ghaziabad and Faridabad.',
       },
       {
         title: 'Always reachable',

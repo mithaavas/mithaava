@@ -1,5 +1,5 @@
 /**
- * Delivery-area landing pages (all within the 10 km radius of Sector 46).
+ * Delivery-area landing pages for neighbourhoods near our Sector 46 bakery.
  * TODO(owner): confirm neighbourhood names and pincodes against real orders.
  */
 
@@ -122,7 +122,7 @@ export const localities: Locality[] = [
       'Cake delivery in Sector 50, Gurugram from Mithaava. Fresh cream cakes, cheesecakes & premium celebration cakes from Sector 46, delivered 24/7.',
     heading: 'Fresh cakes delivered in Sector 50, Gurugram',
     intro:
-      'Sector 50 is well inside our delivery radius, so whether it is a birthday at home or a celebration at the office, a fresh Mithaava cake is only a WhatsApp message away.',
+      'Sector 50 is just next door to our bakery, so whether it is a birthday at home or a celebration at the office, a fresh Mithaava cake is only a WhatsApp message away.',
     body: [
       'Our Sector 50 customers love the Red Velvet with cream cheese frosting, the Tiramisu and our rich chocolate range. Every cake is freshly finished before it leaves the kitchen.',
       'Need it at midnight? We are open 24 hours — order ahead and we will time the delivery for the moment you cut the cake.',
@@ -143,7 +143,7 @@ export const localities: Locality[] = [
     intro:
       'Golf Course Extension Road is home to some of Gurugram’s most vibrant societies — and some of our most loved celebration cakes. Mithaava delivers here 24 hours a day.',
     body: [
-      'Golf Course Extension is within our 10 km delivery radius from Sector 46. We pack every cake carefully for the drive so premium finishes like Ferrero Rocher and Belgian truffle arrive picture-perfect.',
+      'Golf Course Extension is a short drive from our Sector 46 bakery. We pack every cake carefully for the drive so premium finishes like Ferrero Rocher and Belgian truffle arrive picture-perfect.',
       'Share your tower, flat number and any gate instructions when you order on WhatsApp, and we will coordinate the handover with you.',
     ],
     neighbourhoods: ['Sector 58', 'Sector 59', 'Sector 62', 'Sector 65'],

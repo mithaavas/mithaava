@@ -15,7 +15,7 @@ type DeliveryAreasProps = {
 
 export function DeliveryAreas({
   excludeSlug,
-  title = 'Cake delivery across South Gurugram',
+  title = 'Cake delivery across Delhi NCR',
   className,
 }: DeliveryAreasProps) {
   const areas = getAllLocalities().filter((l) => l.slug !== excludeSlug);
@@ -37,7 +37,7 @@ export function DeliveryAreas({
         </h2>
         <p className="mt-2 max-w-2xl text-cocoa-800/75">
           Baked fresh in {siteConfig.address.locality}, {siteConfig.address.city}{' '}
-          and delivered within {deliveryConfig.radiusKm} km —{' '}
+          and delivered anywhere in {deliveryConfig.serviceArea} —{' '}
           {siteConfig.businessHours.label.toLowerCase()}, every day.
         </p>
         <ul className="mt-6 flex flex-wrap gap-2.5">

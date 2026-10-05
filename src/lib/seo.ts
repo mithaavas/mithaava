@@ -87,6 +87,11 @@ function bakeryEntity() {
     slogan: siteConfig.taglines.primary,
     hasMap: getMapLinkUrl(),
     areaServed: [
+      { '@type': 'AdministrativeArea', name: deliveryConfig.serviceArea },
+      ...deliveryConfig.serviceablePrefixes.map((entry) => ({
+        '@type': 'Place',
+        name: entry.area,
+      })),
       { '@type': 'Place', name: `${siteConfig.address.locality}, ${siteConfig.address.city}` },
       ...getAllLocalities().map((l) => ({
         '@type': 'Place',

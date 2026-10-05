@@ -79,7 +79,7 @@ export const blogPosts: BlogPost[] = [
       { type: 'h2', text: 'Where we deliver at midnight' },
       {
         type: 'p',
-        text: 'We deliver midnight cakes within 10 km of our Sector 46 bakery. That includes these neighbourhoods:',
+        text: 'We deliver midnight cakes across Delhi NCR from our Sector 46 bakery. Neighbourhoods close to us get the quickest drop-offs:',
       },
       {
         type: 'links',
@@ -211,10 +211,10 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'same-day-cake-gurugram',
     metaDescription:
-      'Need a same-day cake in Gurugram? How lead times, delivery slots and our 10 km radius from Sector 46 work — and which cakes are ready fastest.',
+      'Need a same-day cake in Gurugram? How lead times and delivery slots work across Delhi NCR — and which Mithaava cakes are ready fastest.',
     title: 'Same-day cakes in Gurugram: what you should know',
     excerpt:
-      'We deliver within 10 km of Sector 46. Lead times still matter — especially for cheese and signature cakes.',
+      'We deliver across Delhi NCR from Sector 46. Lead times still matter — especially for cheese and signature cakes.',
     date: '2026-09-05',
     readMinutes: 5,
     cover: {
@@ -226,7 +226,7 @@ export const blogPosts: BlogPost[] = [
     sections: [
       {
         type: 'p',
-        text: 'Gurugram plans change fast — surprise visits, last-minute office parties, a sudden “can you get a cake by evening?” text. Mithaava delivers within about 10 km of Sector 46, but fresh baking still needs a little runway.',
+        text: 'Gurugram plans change fast — surprise visits, last-minute office parties, a sudden “can you get a cake by evening?” text. Mithaava delivers across Delhi NCR from Sector 46, but fresh baking still needs a little runway.',
       },
       { type: 'h2', text: 'How delivery works' },
       {
@@ -244,7 +244,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Outside our radius? You can still enjoy Mithaava through Swiggy or Zomato where listed. For the fullest menu and custom messages on cake, ordering directly with us works best.',
+        text: 'Ordering for Delhi, Noida, Ghaziabad or Faridabad? Order a little earlier so we can plan the drive across NCR. For the fullest menu and custom messages on cake, ordering directly with us works best.',
       },
     ],
   },
@@ -496,7 +496,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Find us at House No. 540 LGF, Sector 46, Gurugram — or let us come to you within our delivery radius.',
+        text: 'Find us at House No. 540 LGF, Sector 46, Gurugram — or let us deliver anywhere in Delhi NCR.',
       },
     ],
   },

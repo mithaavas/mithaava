@@ -8,7 +8,7 @@ export const siteConfig = {
   seo: {
     homeTitle: 'Mithaava | Artisanal Bakery & Cake Delivery Sector 46 Gurugram',
     homeDescription:
-      'Order fresh artisanal cakes, cheesecakes & gourmet desserts from Mithaava. 24/7 delivery across Sector 46 & South Gurugram within 10 km. Call/WhatsApp now.',
+      'Order fresh artisanal cakes, cheesecakes & gourmet desserts from Mithaava. 24/7 delivery across Delhi NCR from Sector 46, Gurugram. Order now.',
     heroHeading: 'Fresh Artisanal Cakes & Gourmet Bakes in Gurugram',
     homeKeywords: [
       'bakery in Sector 46 Gurugram',

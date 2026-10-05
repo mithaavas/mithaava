@@ -1,7 +1,4 @@
-import {
-  deliveryConfig,
-  serviceablePincodeSet,
-} from '@/config/delivery';
+import { deliveryConfig, serviceAreaForPincode } from '@/config/delivery';
 import type { DeliveryCheckResult } from '@/domain/types';
 import { isValidPincode } from '@/lib/validators';
 
@@ -20,22 +17,15 @@ export class StaticPincodeDeliveryService implements DeliveryService {
       };
     }
 
-    if (serviceablePincodeSet.has(trimmed)) {
-      const match = deliveryConfig.serviceablePincodes.find(
-        (entry) => entry.pincode === trimmed,
-      );
-      return {
-        status: 'serviceable',
-        pincode: trimmed,
-        area: match?.area,
-      };
+    const area = serviceAreaForPincode(trimmed);
+    if (area) {
+      return { status: 'serviceable', pincode: trimmed, area };
     }
 
     return {
       status: 'unserviceable',
       pincode: trimmed,
-      reason:
-        'Outside our 10 km delivery radius from Sector 46, Gurugram',
+      reason: `Outside our ${deliveryConfig.serviceArea} delivery area`,
     };
   }
 }

@@ -90,8 +90,8 @@ export function CheckoutForm() {
           Confirm delivery area
         </h2>
         <p className="text-cocoa-800/80">
-          Almost done — enter your pincode so we can confirm delivery within
-          10 km of Sector 46.
+          Almost done — enter your pincode so we can confirm delivery anywhere
+          in Delhi NCR.
         </p>
         <PincodeCard autoFocus variant="checkout" />
       </section>

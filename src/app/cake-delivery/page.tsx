@@ -10,8 +10,8 @@ import { getAllLocalities } from '@/data/localities';
 import { localityPath } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Cake Delivery Areas in Gurugram — Sohna Road, Sector 45, 47, 50 & more',
-  description: `Mithaava delivers fresh cakes 24/7 within ${deliveryConfig.radiusKm} km of Sector 46 — Sohna Road, Nirvana Country, Sectors 45, 47, 50 & Golf Course Extension.`,
+  title: 'Cake Delivery Across Delhi NCR — Gurugram, Delhi, Noida & more',
+  description: `Mithaava delivers fresh cakes 24/7 across ${deliveryConfig.serviceArea} from Sector 46, Gurugram — Delhi, Noida, Faridabad, Sohna Road, Golf Course Extension & more.`,
   alternates: { canonical: '/cake-delivery/' },
 };
 
@@ -28,12 +28,13 @@ export default function CakeDeliveryIndexPage() {
               Delivery areas
             </p>
             <h1 className="mt-2 max-w-3xl font-display text-3xl leading-tight text-teal-900 sm:text-4xl">
-              24/7 cake delivery across South Gurugram
+              24/7 cake delivery across {deliveryConfig.serviceArea}
             </h1>
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-cocoa-800/80 sm:text-lg">
               Every {siteConfig.brand} cake is baked in {siteConfig.address.locality},{' '}
-              {siteConfig.address.city} and delivered fresh within{' '}
-              {deliveryConfig.radiusKm} km — day or night.
+              {siteConfig.address.city} and delivered fresh anywhere in{' '}
+              {deliveryConfig.serviceArea} — Gurugram, Delhi, Noida, Greater Noida, Ghaziabad
+              and Faridabad — day or night.
             </p>
           </div>
         </section>

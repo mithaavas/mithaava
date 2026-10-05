@@ -64,7 +64,7 @@ export default async function LocalityPage({
     { icon: Clock, title: siteConfig.businessHours.label, body: 'Midnight surprises welcome' },
     {
       icon: MapPin,
-      title: `Within ${deliveryConfig.radiusKm} km`,
+      title: `All of ${deliveryConfig.serviceArea}`,
       body: `From ${siteConfig.address.locality}, ${siteConfig.address.city}`,
     },
     { icon: ShieldCheck, title: 'FSSAI registered', body: `Reg. ${siteConfig.fssai}` },
