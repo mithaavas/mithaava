@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { LandingPage } from '@/components/landing/LandingPage';
+import { JsonLd } from '@/components/seo/JsonLd';
 import { siteConfig } from '@/config/site';
+import { faqJsonLd, homeFaqs } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: { absolute: siteConfig.seo.homeTitle },
@@ -8,5 +10,10 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  return <LandingPage />;
+  return (
+    <>
+      <JsonLd data={faqJsonLd([...homeFaqs])} />
+      <LandingPage />
+    </>
+  );
 }

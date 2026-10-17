@@ -202,6 +202,304 @@ export const categoryPages: CategoryPage[] = [
     ],
     relatedBlogSlugs: ['midnight-cake-delivery-gurugram', 'birthday-cakes-sector-46', 'cake-message-ideas'],
   },
+  {
+    slug: 'eggless-cakes',
+    collectionIds: ['best-sellers', 'classic', 'chocolate', 'cheese', 'fruit'],
+    featuredProductSlugs: [
+      'black-forest',
+      'ferrero-rocher',
+      'philippines-blueberry-cheese',
+      'red-velvet',
+      'fresh-fruit',
+      'pineapple',
+    ],
+    navLabel: 'Eggless cakes',
+    ctaLabel: 'Shop eggless cakes',
+    primaryKeyword: 'eggless cake delivery Gurugram',
+    secondaryKeywords: [
+      'eggless cake Delhi NCR',
+      'pure veg bakery Gurugram',
+      'eggless birthday cake Gurgaon',
+    ],
+    metaTitle: 'Eggless Cake Delivery in Gurugram & Delhi NCR — Mithaava',
+    metaDescription:
+      'Eggless cake delivery in Gurugram & Delhi NCR from Mithaava, Sector 46. Pure veg, alcohol-free cakes, cheesecakes & midnight delivery. Order 24/7.',
+    heading: 'Eggless cake delivery in Gurugram and Delhi NCR',
+    intro:
+      'Every Mithaava cake is Pure Veg, eggless and alcohol-free — chocolate, cheesecake, fruit and celebration cakes baked fresh in Sector 46 and delivered across Delhi NCR.',
+    sections: [
+      {
+        heading: 'A pure veg bakery you can trust',
+        body: 'Families across Gurugram choose Mithaava because every sponge, cream and cheesecake is made without egg. You do not need to ask which cakes are eggless — the whole menu is.',
+      },
+      {
+        heading: 'Eggless birthday and celebration cakes',
+        body: 'From Black Forest and Pineapple to Ferrero Rocher and Red Velvet, our eggless celebration cakes come in Bento (200 g), 500 gm and 1 kg. Add a name or message at checkout.',
+      },
+      {
+        heading: 'Order eggless cakes online across Delhi NCR',
+        body: 'We deliver eggless cakes to Delhi, Gurugram, Noida, Faridabad and Ghaziabad. Pick your cake, confirm your pincode and send the order on WhatsApp — we are open 24 hours.',
+      },
+    ],
+    faqs: [
+      {
+        q: 'Are all Mithaava cakes eggless?',
+        a: 'Yes. All cakes, pastries, brownies, cupcakes and jar cakes on our menu are Pure Veg, eggless and alcohol-free.',
+      },
+      {
+        q: 'Do you deliver eggless cakes across Delhi NCR?',
+        a: 'Yes. We deliver from Sector 46, Gurugram to Delhi, Noida, Faridabad, Ghaziabad and all of Gurugram. Enter your pincode at checkout to confirm.',
+      },
+      {
+        q: 'Can I order an eggless cake for midnight delivery?',
+        a: 'Yes. We are open 24 hours and can time eggless cake delivery for midnight celebrations across Delhi NCR.',
+      },
+    ],
+    relatedBlogSlugs: ['birthday-cakes-sector-46', 'perfect-cake-size-guide', 'midnight-cake-delivery-gurugram'],
+  },
+  {
+    slug: 'birthday-cakes',
+    collectionIds: ['celebration', 'best-sellers'],
+    extraProductSlugs: [
+      'kit-kat',
+      'rainbow-cheese',
+      'choco-oreo',
+      'black-forest',
+      'ferrero-rocher',
+      'number-letter',
+      'theme-designer',
+    ],
+    featuredProductSlugs: [
+      'ferrero-rocher',
+      'kit-kat',
+      'black-forest',
+      'rainbow-cheese',
+      'number-letter',
+      'theme-designer',
+    ],
+    navLabel: 'Birthday cakes',
+    ctaLabel: 'Shop birthday cakes',
+    primaryKeyword: 'birthday cake delivery Gurugram',
+    secondaryKeywords: [
+      'birthday cakes Sector 46',
+      'kids birthday cake Gurgaon',
+      'theme cake delivery Delhi NCR',
+    ],
+    metaTitle: 'Birthday Cake Delivery in Gurugram — Theme & Kids Cakes',
+    metaDescription:
+      'Birthday cake delivery in Gurugram from Mithaava, Sector 46. Eggless theme cakes, KitKat, Ferrero Rocher & midnight surprises across Delhi NCR.',
+    heading: 'Birthday cake delivery in Gurugram',
+    intro:
+      'Make the birthday cut with a freshly baked eggless cake from Sector 46. Kids love KitKat and Rainbow Cheesecake; adults reach for Ferrero Rocher and Black Forest — delivered 24/7 across Delhi NCR.',
+    sections: [
+      {
+        heading: 'Kids birthday cakes they will recognise',
+        body: 'KitKat, Chocolate Oreo and Rainbow Cheesecake are the playful hits for kids’ parties. Add a short message or name and we finish the cake before it leaves the bakery.',
+      },
+      {
+        heading: 'Theme, number and designer birthday cakes',
+        body: 'Need a number cake, letter cake or full theme design? Our celebration range starts from a clear per-kg price and we confirm the design with you on WhatsApp.',
+      },
+      {
+        heading: 'Midnight birthday cake delivery',
+        body: 'Surprise them at 12 AM. Order a few hours ahead, choose a late slot at checkout and we will coordinate the society gate with you.',
+      },
+    ],
+    faqs: [
+      {
+        q: 'Which birthday cake is most popular at Mithaava?',
+        a: 'Ferrero Rocher and Black Forest lead adult birthdays; KitKat and Rainbow Cheesecake are the kids’ favourites.',
+      },
+      {
+        q: 'Can you write a name on a birthday cake?',
+        a: 'Yes. Add the message at checkout or tell us on WhatsApp and we pipe it before delivery.',
+      },
+      {
+        q: 'Do you deliver birthday cakes at midnight in Gurugram?',
+        a: 'Yes. We are open 24 hours and deliver midnight birthday cakes across Delhi NCR from Sector 46.',
+      },
+    ],
+    relatedBlogSlugs: ['birthday-cakes-sector-46', 'cake-message-ideas', 'midnight-cake-delivery-gurugram'],
+  },
+  {
+    slug: 'anniversary-cakes',
+    collectionIds: ['celebration'],
+    extraProductSlugs: [
+      'heart-shaped',
+      'red-velvet',
+      'philippines-blueberry-cheese',
+      'ferrero-rocher',
+      'opera',
+    ],
+    featuredProductSlugs: [
+      'heart-shaped',
+      'red-velvet',
+      'philippines-blueberry-cheese',
+      'ferrero-rocher',
+    ],
+    navLabel: 'Anniversary cakes',
+    ctaLabel: 'Shop anniversary cakes',
+    primaryKeyword: 'anniversary cake delivery Gurugram',
+    secondaryKeywords: [
+      'heart shaped cake Gurgaon',
+      'couple cake Bento',
+      'anniversary cake Delhi NCR',
+    ],
+    metaTitle: 'Anniversary Cake Delivery in Gurugram — Heart & Bento',
+    metaDescription:
+      'Anniversary cake delivery in Gurugram from Mithaava. Heart-shaped cakes, 200 g Bento for two, Red Velvet & cheesecakes — delivered 24/7 across Delhi NCR.',
+    heading: 'Anniversary cake delivery in Gurugram',
+    intro:
+      'Celebrate the two of you with a heart-shaped cake or a 200 g Bento — proper celebration cakes without leftovers. Delivered fresh from Sector 46 across Delhi NCR.',
+    sections: [
+      {
+        heading: 'Heart-shaped cakes for honeymoons and anniversaries',
+        body: 'Our Heart-Shaped Cake is available in 500 gm and 1 kg. Tell us the flavour you love and we finish it for your date night or anniversary dinner.',
+      },
+      {
+        heading: 'Bento cakes made for two',
+        body: 'The 200 g Bento size is our couple cake — Red Velvet, Blueberry Cheesecake and Ferrero Rocher are the most ordered anniversary flavours.',
+      },
+      {
+        heading: 'Midnight anniversary surprises',
+        body: 'Open 24 hours means you can plan a 12 AM cake reveal. Order ahead, share gate instructions, and we will time the delivery.',
+      },
+    ],
+    faqs: [
+      {
+        q: 'Do you make heart-shaped anniversary cakes?',
+        a: 'Yes. Our Heart-Shaped Cake comes in 500 gm (₹620) and 1 kg (₹1,140). Flavour is confirmed with you on WhatsApp.',
+      },
+      {
+        q: 'What size cake is best for two people?',
+        a: 'Choose the 200 g Bento size — a proper celebration cake meant for exactly two people.',
+      },
+      {
+        q: 'Can you deliver an anniversary cake at midnight?',
+        a: 'Yes. Midnight anniversary cake delivery is available across Delhi NCR from our Sector 46 bakery.',
+      },
+    ],
+    relatedBlogSlugs: ['perfect-cake-size-guide', 'ferrero-rocher-celebration-cake', 'midnight-cake-delivery-gurugram'],
+  },
+  {
+    slug: 'corporate-cakes',
+    collectionIds: ['pastries', 'brownies', 'cupcakes', 'jar-cakes'],
+    extraProductSlugs: ['corporate-logo', 'theme-designer'],
+    featuredProductSlugs: [
+      'corporate-logo',
+      'pastry-box-12',
+      'brownie-box-12',
+      'cupcake-box-12',
+      'jar-box-3',
+      'pastry-box-6',
+    ],
+    navLabel: 'Corporate cakes',
+    ctaLabel: 'Shop corporate treats',
+    primaryKeyword: 'corporate cake delivery Gurugram',
+    secondaryKeywords: [
+      'office cake delivery Gurgaon',
+      'logo cake Delhi NCR',
+      'bulk pastry box Gurugram',
+    ],
+    metaTitle: 'Corporate Cake & Office Treat Delivery in Gurugram',
+    metaDescription:
+      'Corporate cake delivery in Gurugram from Mithaava — logo cakes, pastry boxes, brownie boxes & jar cakes for offices across Delhi NCR. WhatsApp for a quote.',
+    heading: 'Corporate cakes and office treat boxes',
+    intro:
+      'Logo cakes for brand moments, pastry and brownie boxes for team birthdays, jar cakes for client gifting — baked in Sector 46 and delivered across Delhi NCR.',
+    sections: [
+      {
+        heading: 'Brand-printed logo cakes',
+        body: 'Our Corporate Logo Cake starts from ₹1,330/kg. Share your logo and event details on WhatsApp and we confirm design, weight and delivery timing.',
+      },
+      {
+        heading: 'Pastry, brownie and cupcake boxes for the office',
+        body: 'Boxes of 4, 6 or 12 make it easy to treat a floor or a meeting room. All items are eggless and finished fresh before dispatch.',
+      },
+      {
+        heading: 'Bulk and Diwali gifting',
+        body: 'Planning Diwali hampers or a large office celebration? Message us on WhatsApp for a quote on jar boxes, brownie boxes and custom cakes.',
+      },
+    ],
+    faqs: [
+      {
+        q: 'Can you print our company logo on a cake?',
+        a: 'Yes. Order the Corporate Logo Cake and share your logo file on WhatsApp. We confirm the design and final price before baking.',
+      },
+      {
+        q: 'Do you deliver to offices in Noida and Delhi?',
+        a: 'Yes. We deliver corporate cakes and treat boxes across Delhi NCR, including Delhi, Noida, Gurugram, Faridabad and Ghaziabad.',
+      },
+      {
+        q: 'What is a good quantity for a team of 20?',
+        a: 'A 1 kg cake plus a pastry or brownie box of 12 usually covers a small office celebration. We can guide you on WhatsApp.',
+      },
+    ],
+    relatedBlogSlugs: ['order-cakes-whatsapp-guide', 'same-day-cake-gurugram', 'perfect-cake-size-guide'],
+  },
+  {
+    slug: 'same-day-cake-delivery',
+    collectionIds: ['best-sellers', 'classic', 'chocolate'],
+    extraProductSlugs: [
+      'black-forest',
+      'pineapple',
+      'chocolate',
+      'butter-scotch',
+      'truffle-fresh-cream',
+      'strawberry',
+    ],
+    featuredProductSlugs: [
+      'black-forest',
+      'pineapple',
+      'chocolate',
+      'butter-scotch',
+      'truffle-fresh-cream',
+      'dark-chocolate-truffle',
+    ],
+    navLabel: 'Same-day delivery',
+    ctaLabel: 'Order for today',
+    primaryKeyword: 'same day cake delivery Gurugram',
+    secondaryKeywords: [
+      'same day cake Delhi NCR',
+      'last minute cake Sector 46',
+      'urgent cake delivery Gurgaon',
+    ],
+    metaTitle: 'Same-Day Cake Delivery in Gurugram — Order Today',
+    metaDescription:
+      'Same-day cake delivery in Gurugram from Mithaava, Sector 46. Fresh cream & chocolate cakes for last-minute plans across Delhi NCR. Open 24/7.',
+    heading: 'Same-day cake delivery in Gurugram',
+    intro:
+      'Plans changed? Mithaava bakes fresh cream and chocolate cakes that can often go out the same day when you order early enough. Open 24 hours in Sector 46.',
+    sections: [
+      {
+        heading: 'Which cakes are fastest for same-day?',
+        body: 'Classic fresh cream cakes — Black Forest, Pineapple, Butterscotch, Chocolate and Fresh Cream Truffle — need less setting time than cheesecakes or Red Velvet.',
+      },
+      {
+        heading: 'Lead times still matter',
+        body: 'Cheesecakes need about 2 extra hours and some celebration cakes need longer. Message us on WhatsApp with your area and we will tell you the earliest slot.',
+      },
+      {
+        heading: 'Same-day across Delhi NCR',
+        body: 'Nearby Gurugram sectors are quickest. For Delhi, Noida, Faridabad or Ghaziabad, order earlier so we can plan the drive while the cake stays chilled.',
+      },
+    ],
+    faqs: [
+      {
+        q: 'Can I get a cake delivered today in Gurugram?',
+        a: 'Often yes for fresh cream and chocolate cakes if you order early enough. WhatsApp us your pincode and cake choice and we confirm the earliest slot.',
+      },
+      {
+        q: 'Which cakes are not ideal for last-minute orders?',
+        a: 'Cheesecakes need about 2 extra hours and Red Velvet about 6 hours, so order those earlier in the day.',
+      },
+      {
+        q: 'Do you offer same-day delivery to Noida or Delhi?',
+        a: 'Yes when timing allows. Longer drives need more notice — we confirm on WhatsApp before you finalise.',
+      },
+    ],
+    relatedBlogSlugs: ['same-day-cake-gurugram', 'order-cakes-whatsapp-guide', 'midnight-cake-delivery-gurugram'],
+  },
 ];
 
 export function getAllCategoryPages(): CategoryPage[] {
@@ -212,7 +510,27 @@ export function getCategoryPageBySlug(slug: string): CategoryPage | undefined {
   return categoryPages.find((c) => c.slug === slug);
 }
 
+/** Prefer primary collection hubs; celebration maps to birthday cakes. */
+const collectionCategoryPreference: Record<string, string> = {
+  chocolate: 'chocolate-cakes',
+  'chocolate-recipe': 'chocolate-cakes',
+  cheese: 'cheesecakes',
+  celebration: 'birthday-cakes',
+  pastries: 'corporate-cakes',
+  brownies: 'corporate-cakes',
+  cupcakes: 'corporate-cakes',
+  'jar-cakes': 'corporate-cakes',
+  classic: 'eggless-cakes',
+  'best-sellers': 'eggless-cakes',
+  fruit: 'eggless-cakes',
+};
+
 /** Category landing page for a menu collection, if one exists. */
 export function getCategoryPageForCollection(collectionId: string): CategoryPage | undefined {
+  const preferred = collectionCategoryPreference[collectionId];
+  if (preferred) {
+    const page = categoryPages.find((c) => c.slug === preferred);
+    if (page) return page;
+  }
   return categoryPages.find((c) => c.collectionIds.includes(collectionId));
 }

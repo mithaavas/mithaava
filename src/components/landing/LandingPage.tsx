@@ -17,6 +17,8 @@ import { Footer } from '@/components/layout/Footer';
 import { PlateCarousel } from '@/components/landing/PlateCarousel';
 import { WhatsAppIcon } from '@/components/brand/WhatsAppIcon';
 import { DeliveryAreas } from '@/components/seo/DeliveryAreas';
+import { FaqSection } from '@/components/seo/FaqSection';
+import { homeFaqs } from '@/lib/seo';
 import { Button } from '@/components/ui/Button';
 import { collections } from '@/data/collections';
 import { siteConfig } from '@/config/site';
@@ -285,16 +287,20 @@ export function LandingPage() {
               Fresh artisanal cakes from our Sector 46 bakery
             </h2>
             <p className="mt-2 max-w-2xl text-cocoa-800/75">
-              Every cake is baked fresh in our Sector 46, Gurugram kitchen and
-              delivered 24/7 across Gurgaon. Try the{' '}
-              <Link href="/cakes/chocolate-cakes/" className="font-medium text-teal-700 underline-offset-2 hover:underline">
-                best chocolate truffle cakes
+              Every cake is baked fresh in our Sector 46, Gurugram kitchen —
+              Pure Veg and eggless — and delivered 24/7 across Delhi NCR. Try our{' '}
+              <Link href="/cakes/eggless-cakes/" className="font-medium text-teal-700 underline-offset-2 hover:underline">
+                eggless cakes
               </Link>
-              , our{' '}
-              <Link href="/cakes/cheesecakes/" className="font-medium text-teal-700 underline-offset-2 hover:underline">
-                blueberry cheesecake
+              ,{' '}
+              <Link href="/cakes/birthday-cakes/" className="font-medium text-teal-700 underline-offset-2 hover:underline">
+                birthday cakes
+              </Link>
+              ,{' '}
+              <Link href="/cakes/chocolate-cakes/" className="font-medium text-teal-700 underline-offset-2 hover:underline">
+                chocolate truffle cakes
               </Link>{' '}
-              or plan a{' '}
+              or{' '}
               <Link href="/cakes/midnight-delivery-gurugram/" className="font-medium text-teal-700 underline-offset-2 hover:underline">
                 midnight cake delivery
               </Link>
@@ -312,7 +318,7 @@ export function LandingPage() {
                     src={
                       collectionPhotos[c.id] ?? '/cakes/cake-slice-berry.jpg'
                     }
-                    alt=""
+                    alt={`${c.label} from Mithaava bakery, Gurugram`}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                     sizes="(max-width:768px) 50vw, 25vw"
@@ -333,6 +339,7 @@ export function LandingPage() {
           </div>
         </section>
 
+        <FaqSection faqs={[...homeFaqs]} />
         <DeliveryAreas />
       </main>
       <Footer />

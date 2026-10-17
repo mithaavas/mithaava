@@ -4,8 +4,10 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { FssaiBadge } from '@/components/brand/FssaiBadge';
 import { MapEmbed } from '@/components/brand/MapEmbed';
+import { JsonLd } from '@/components/seo/JsonLd';
 import { siteConfig } from '@/config/site';
 import { copy } from '@/content/copy';
+import { aboutPageJsonLd, breadcrumbJsonLd } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'About Us — Artisanal Bakery in Sector 46, Gurugram',
@@ -19,6 +21,15 @@ export default function AboutPage() {
 
   return (
     <>
+      <JsonLd
+        data={[
+          aboutPageJsonLd(),
+          breadcrumbJsonLd([
+            { name: 'Home', path: '/' },
+            { name: 'About', path: '/about/' },
+          ]),
+        ]}
+      />
       <Header variant="shop" />
       <main className="bg-[#FFF6F2]">
         <section className="mx-auto max-w-6xl px-4 pt-6 pb-10 sm:px-6 sm:pt-8 sm:pb-12">

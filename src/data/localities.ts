@@ -10,6 +10,11 @@ export type Locality = {
   name: string;
   /** Short label used in chips and link lists */
   shortName: string;
+  /** Defaults to Gurugram when omitted */
+  city?: string;
+  region?: string;
+  /** City hubs show first in delivery lists */
+  tier?: 'city' | 'neighbourhood';
   metaTitle: string;
   metaDescription: string;
   heading: string;
@@ -38,9 +43,118 @@ const sharedFaqs = (area: string): LocalityFaq[] => [
 
 export const localities: Locality[] = [
   {
+    slug: 'sector-46',
+    name: 'Sector 46',
+    shortName: 'Sector 46',
+    tier: 'neighbourhood',
+    metaTitle: 'Cake Delivery in Sector 46, Gurugram — Bakery Open 24/7',
+    metaDescription:
+      'Cake delivery in Sector 46, Gurugram from Mithaava bakery at House No. 540 LGF. Fresh eggless cakes, midnight delivery & WhatsApp ordering, open 24/7.',
+    heading: 'Your neighbourhood bakery in Sector 46, Gurugram',
+    intro:
+      'Sector 46 is home. Every Mithaava cake is baked at House No. 540 LGF and delivered to societies and homes around the sector — often within the shortest window on our map.',
+    body: [
+      'Because the bakery is here, Sector 46 is ideal for same-day and midnight surprises. Fresh cream cakes, cheesecakes and celebration cakes leave the kitchen finished and chilled.',
+      'Popular orders include Ferrero Rocher, Black Forest, Red Velvet and our Blueberry Cheesecake. Add a message at checkout and we pipe it before delivery.',
+    ],
+    neighbourhoods: ['Sector 46', 'Huda Market area', 'Sector 45 border', 'Jharsa road'],
+    pincodes: ['122003'],
+    popularProductSlugs: ['ferrero-rocher', 'black-forest', 'red-velvet', 'philippines-blueberry-cheese'],
+    faqs: sharedFaqs('Sector 46'),
+  },
+  {
+    slug: 'delhi',
+    name: 'Delhi',
+    shortName: 'Delhi',
+    city: 'Delhi',
+    region: 'Delhi',
+    tier: 'city',
+    metaTitle: 'Cake Delivery in Delhi — Eggless Cakes from Mithaava',
+    metaDescription:
+      'Cake delivery in Delhi from Mithaava, Sector 46 Gurugram. Fresh eggless cakes, cheesecakes & midnight surprises across Delhi NCR. Order on WhatsApp 24/7.',
+    heading: 'Fresh cake delivery across Delhi',
+    intro:
+      'Order a freshly baked Mithaava cake from our Sector 46 kitchen for delivery across Delhi. Pure veg, eggless cakes for birthdays, offices and midnight celebrations.',
+    body: [
+      'We deliver to Delhi pincodes starting with 110. Order a little earlier than a Gurugram neighbour so we can plan the drive and keep cream cakes chilled.',
+      'Ferrero Rocher, Dark Chocolate Truffle, Red Velvet and Blueberry Cheesecake are the cakes Delhi customers order most for birthdays and office treats.',
+    ],
+    neighbourhoods: ['South Delhi', 'Dwarka', 'Rohini', 'East Delhi', 'Central Delhi'],
+    pincodes: ['110001', '110016', '110017', '110075'],
+    popularProductSlugs: ['ferrero-rocher', 'dark-chocolate-truffle', 'red-velvet', 'philippines-blueberry-cheese'],
+    faqs: sharedFaqs('Delhi'),
+  },
+  {
+    slug: 'noida',
+    name: 'Noida',
+    shortName: 'Noida',
+    city: 'Noida',
+    region: 'Uttar Pradesh',
+    tier: 'city',
+    metaTitle: 'Cake Delivery in Noida — Fresh Eggless Cakes 24/7',
+    metaDescription:
+      'Cake delivery in Noida & Greater Noida from Mithaava, Sector 46 Gurugram. Eggless birthday cakes, cheesecakes & corporate boxes — order on WhatsApp 24/7.',
+    heading: 'Cake delivery in Noida and Greater Noida',
+    intro:
+      'From Sector 18 offices to Greater Noida homes, Mithaava delivers freshly finished eggless cakes across Noida. Open 24 hours for same-day and midnight orders.',
+    body: [
+      'Noida and Greater Noida use pincodes starting with 201. Tell us your sector, tower and gate instructions on WhatsApp and we will time the drop-off.',
+      'Corporate teams often order pastry boxes, brownie boxes and logo cakes alongside a celebration cake for office birthdays.',
+    ],
+    neighbourhoods: ['Sector 18', 'Sector 62', 'Sector 137', 'Greater Noida', 'Noida Extension'],
+    pincodes: ['201301', '201304', '201310'],
+    popularProductSlugs: ['ferrero-rocher', 'kit-kat', 'corporate-logo', 'pastry-box-6'],
+    faqs: sharedFaqs('Noida'),
+  },
+  {
+    slug: 'faridabad',
+    name: 'Faridabad',
+    shortName: 'Faridabad',
+    city: 'Faridabad',
+    region: 'Haryana',
+    tier: 'city',
+    metaTitle: 'Cake Delivery in Faridabad — Mithaava Bakery 24/7',
+    metaDescription:
+      'Cake delivery in Faridabad from Mithaava, Sector 46 Gurugram. Fresh eggless cakes, cheesecakes & celebration cakes delivered 24/7. Order on WhatsApp.',
+    heading: 'Fresh cake delivery in Faridabad',
+    intro:
+      'Celebrate with a cake baked fresh in Sector 46 and delivered to Faridabad. Mithaava is open 24 hours for birthday, anniversary and family orders.',
+    body: [
+      'Faridabad pincodes start with 121. Order ahead so we can plan the route and keep your cake chilled on the drive from Gurugram.',
+      'Black Forest, Butterscotch, Fresh Fruit and chocolate truffle cakes are popular family picks for Faridabad celebrations.',
+    ],
+    neighbourhoods: ['Sector 15', 'Sector 21', 'NIT Faridabad', 'Greater Faridabad'],
+    pincodes: ['121001', '121002', '121003'],
+    popularProductSlugs: ['black-forest', 'butter-scotch', 'fresh-fruit', 'dark-chocolate-truffle'],
+    faqs: sharedFaqs('Faridabad'),
+  },
+  {
+    slug: 'ghaziabad',
+    name: 'Ghaziabad',
+    shortName: 'Ghaziabad',
+    city: 'Ghaziabad',
+    region: 'Uttar Pradesh',
+    tier: 'city',
+    metaTitle: 'Cake Delivery in Ghaziabad — Eggless Cakes from Mithaava',
+    metaDescription:
+      'Cake delivery in Ghaziabad from Mithaava, Sector 46 Gurugram. Eggless birthday cakes, cheesecakes & midnight delivery across Delhi NCR. WhatsApp 24/7.',
+    heading: 'Cake delivery in Ghaziabad',
+    intro:
+      'Mithaava delivers freshly baked eggless cakes to Ghaziabad from our Sector 46 kitchen — birthdays, anniversaries and office celebrations, day or night.',
+    body: [
+      'Ghaziabad shares the 201 pincode prefix with Noida. Share your locality and landmark on WhatsApp so the delivery reaches the right gate.',
+      'Chocolate Oreo, Pineapple, Red Velvet and Blueberry Cheesecake are frequent Ghaziabad orders for kids’ parties and family gatherings.',
+    ],
+    neighbourhoods: ['Indirapuram', 'Vaishali', 'Kaushambi', 'Raj Nagar Extension'],
+    pincodes: ['201010', '201014', '201001'],
+    popularProductSlugs: ['choco-oreo', 'pineapple', 'red-velvet', 'philippines-blueberry-cheese'],
+    faqs: sharedFaqs('Ghaziabad'),
+  },
+  {
     slug: 'sohna-road',
     name: 'Sohna Road',
     shortName: 'Sohna Road',
+    tier: 'neighbourhood',
     metaTitle: 'Cake Delivery on Sohna Road, Gurugram — Open 24/7',
     metaDescription:
       'Cake delivery on Sohna Road, Gurugram from Mithaava, Sector 46. Open 24/7 for midnight birthday cakes, cheesecakes & celebration cakes. Order on WhatsApp.',
@@ -60,6 +174,7 @@ export const localities: Locality[] = [
     slug: 'nirvana-country',
     name: 'Nirvana Country',
     shortName: 'Nirvana Country',
+    tier: 'neighbourhood',
     metaTitle: 'Cake Delivery in Nirvana Country, Gurugram — 24 Hours',
     metaDescription:
       'Cake delivery in Nirvana Country, Gurugram from Mithaava bakery, Sector 46. Birthday, anniversary & cheesecakes delivered fresh to your door, 24/7.',
@@ -79,6 +194,7 @@ export const localities: Locality[] = [
     slug: 'sector-45',
     name: 'Sector 45',
     shortName: 'Sector 45',
+    tier: 'neighbourhood',
     metaTitle: 'Cake Delivery in Sector 45, Gurugram — Next Door Bakery',
     metaDescription:
       'Your neighbourhood bakery for Sector 45, Gurugram. Mithaava bakes fresh cakes next door in Sector 46 and delivers 24 hours a day. Order on WhatsApp.',
@@ -98,6 +214,7 @@ export const localities: Locality[] = [
     slug: 'sector-47',
     name: 'Sector 47',
     shortName: 'Sector 47',
+    tier: 'neighbourhood',
     metaTitle: 'Cake Delivery in Sector 47, Gurugram — Open 24 Hours',
     metaDescription:
       'Cake delivery in Sector 47, Gurugram from Mithaava, Sector 46. Birthday & celebration cakes, open 24/7 with midnight delivery. Order on WhatsApp.',
@@ -117,6 +234,7 @@ export const localities: Locality[] = [
     slug: 'sector-50',
     name: 'Sector 50',
     shortName: 'Sector 50',
+    tier: 'neighbourhood',
     metaTitle: 'Cake Delivery in Sector 50, Gurugram — Fresh & 24/7',
     metaDescription:
       'Cake delivery in Sector 50, Gurugram from Mithaava. Fresh cream cakes, cheesecakes & premium celebration cakes from Sector 46, delivered 24/7.',
@@ -136,6 +254,7 @@ export const localities: Locality[] = [
     slug: 'golf-course-extension',
     name: 'Golf Course Extension Road',
     shortName: 'Golf Course Extension',
+    tier: 'neighbourhood',
     metaTitle: 'Cake Delivery on Golf Course Extension Road, Gurugram',
     metaDescription:
       'Cake delivery on Golf Course Extension Road, Gurugram by Mithaava. Ferrero Rocher, Red Velvet & cheesecakes with custom messages — open 24/7.',
@@ -154,7 +273,10 @@ export const localities: Locality[] = [
 ];
 
 export function getAllLocalities(): Locality[] {
-  return localities;
+  return [...localities].sort((a, b) => {
+    const rank = (l: Locality) => (l.tier === 'city' ? 0 : 1);
+    return rank(a) - rank(b);
+  });
 }
 
 export function getLocalityBySlug(slug: string): Locality | undefined {

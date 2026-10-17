@@ -43,6 +43,12 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteConfig.seo.homeTitle,
+    description: siteConfig.seo.homeDescription,
+    images: [siteConfig.heroImage],
+  },
   other: {
     'geo.region': 'IN-HR',
     'geo.placename': `${siteConfig.address.locality}, ${siteConfig.address.city}`,
@@ -75,7 +81,7 @@ const jsonLd = siteGraphJsonLd();
 export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
     <html
-      lang="en"
+      lang="en-IN"
       className={`${fraunces.variable} ${figtree.variable} ${greatVibes.variable} h-full`}
     >
       <head>

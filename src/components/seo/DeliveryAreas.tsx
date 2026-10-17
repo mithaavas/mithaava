@@ -37,7 +37,8 @@ export function DeliveryAreas({
         </h2>
         <p className="mt-2 max-w-2xl text-cocoa-800/75">
           Baked fresh in {siteConfig.address.locality}, {siteConfig.address.city}{' '}
-          and delivered anywhere in {deliveryConfig.serviceArea} —{' '}
+          and delivered anywhere in {deliveryConfig.serviceArea} — Delhi, Noida,
+          Faridabad, Ghaziabad and Gurugram neighbourhoods —{' '}
           {siteConfig.businessHours.label.toLowerCase()}, every day.
         </p>
         <ul className="mt-6 flex flex-wrap gap-2.5">

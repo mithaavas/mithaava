@@ -3,8 +3,10 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { ContactForm } from '@/components/contact/ContactForm';
 import { MapEmbed } from '@/components/brand/MapEmbed';
+import { JsonLd } from '@/components/seo/JsonLd';
 import { siteConfig } from '@/config/site';
 import { copy } from '@/content/copy';
+import { breadcrumbJsonLd, contactPageJsonLd } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Contact Us — Bakery in Sector 46, Gurugram (Open 24/7)',
@@ -15,6 +17,15 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
+      <JsonLd
+        data={[
+          contactPageJsonLd(),
+          breadcrumbJsonLd([
+            { name: 'Home', path: '/' },
+            { name: 'Contact', path: '/contact/' },
+          ]),
+        ]}
+      />
       <Header variant="shop" />
       <main className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
         <h1 className="font-display text-3xl text-teal-900 sm:text-4xl">

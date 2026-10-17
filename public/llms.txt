@@ -1,0 +1,48 @@
+# Mithaava
+> Artisanal eggless bakery in Sector 46, Gurugram. Fresh cakes delivered 24/7 across Delhi NCR.
+
+## Brand
+- Name: Mithaava
+- Tagline: Har Khushi Mein Meetha
+- Website: https://mithaava.com
+- Address: House No. 540 LGF, Sector 46, Gurugram, Haryana 122003, India
+- Phone / WhatsApp: +91 92118 87308
+- Hours: Open 24 hours, every day
+- FSSAI: 20826002001189
+- Diet: Pure Veg · Eggless · Alcohol-free
+- Co-founder: Rahul Kumar Jangra
+
+## Delivery
+- Service area: Delhi NCR
+- Pincode prefixes: 110 (Delhi), 122 (Gurugram), 121 (Faridabad), 201 (Noida, Greater Noida, Ghaziabad)
+- Ordering: Browse menu → cart → pincode check → WhatsApp confirmation
+
+## Key pages
+- Home: https://mithaava.com/
+- Menu: https://mithaava.com/menu/
+- Cake delivery hub: https://mithaava.com/cake-delivery/
+- Eggless cakes: https://mithaava.com/cakes/eggless-cakes/
+- Birthday cakes: https://mithaava.com/cakes/birthday-cakes/
+- Anniversary cakes: https://mithaava.com/cakes/anniversary-cakes/
+- Corporate cakes: https://mithaava.com/cakes/corporate-cakes/
+- Same-day delivery: https://mithaava.com/cakes/same-day-cake-delivery/
+- Midnight delivery: https://mithaava.com/cakes/midnight-delivery-gurugram/
+- Chocolate cakes: https://mithaava.com/cakes/chocolate-cakes/
+- Cheesecakes: https://mithaava.com/cakes/cheesecakes/
+- About: https://mithaava.com/about/
+- Contact: https://mithaava.com/contact/
+- Blog: https://mithaava.com/blog/
+- Sitemap: https://mithaava.com/sitemap.xml
+
+## City delivery pages
+- Sector 46: https://mithaava.com/cake-delivery/sector-46/
+- Delhi: https://mithaava.com/cake-delivery/delhi/
+- Noida: https://mithaava.com/cake-delivery/noida/
+- Faridabad: https://mithaava.com/cake-delivery/faridabad/
+- Ghaziabad: https://mithaava.com/cake-delivery/ghaziabad/
+- Sohna Road: https://mithaava.com/cake-delivery/sohna-road/
+- Nirvana Country: https://mithaava.com/cake-delivery/nirvana-country/
+- Sector 45: https://mithaava.com/cake-delivery/sector-45/
+- Sector 47: https://mithaava.com/cake-delivery/sector-47/
+- Sector 50: https://mithaava.com/cake-delivery/sector-50/
+- Golf Course Extension: https://mithaava.com/cake-delivery/golf-course-extension/

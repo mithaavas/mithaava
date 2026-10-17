@@ -8,6 +8,7 @@ import { Footer } from '@/components/layout/Footer';
 import { MapEmbed } from '@/components/brand/MapEmbed';
 import { WhatsAppIcon } from '@/components/brand/WhatsAppIcon';
 import { DeliveryAreas } from '@/components/seo/DeliveryAreas';
+import { JsonLd } from '@/components/seo/JsonLd';
 import { Button } from '@/components/ui/Button';
 import { siteConfig } from '@/config/site';
 import { deliveryConfig } from '@/config/delivery';
@@ -73,10 +74,7 @@ export default async function LocalityPage({
   return (
     <>
       <Header variant="shop" />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localityJsonLd(locality)) }}
-      />
+      <JsonLd data={localityJsonLd(locality)} />
       <main className="bg-cream-50">
         <section className="bg-[#FFF6F2] px-4 pt-6 pb-10 sm:px-6 sm:pt-8 sm:pb-12">
           <div className="mx-auto max-w-6xl">
